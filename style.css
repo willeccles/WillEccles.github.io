@@ -20,10 +20,12 @@ body {
 }
 
 .header {
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 20px;
 	display: block;
 	width: 100%;
-	height: 340px;
+	height: 365px;
 	background-image: url(bgimg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -32,6 +34,7 @@ body {
 	color: white;
 	text-shadow: 0px 0px 5px black;
 	z-index: 400;
+	box-shadow: inset 0px 0px 12px 0px black;
 }
 
 .header h1 {
@@ -49,6 +52,7 @@ body {
 	font-style: italic;
 	font-size: 200%;
 	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 #header-avi {
@@ -59,10 +63,48 @@ body {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	border: solid 3px white;
-	box-shadow: 0px 0px 8px 0px black;
+	box-shadow: 0px 0px 8px 0px black, inset 0px 0px 5px 1px black;
 	background-image: url(avatar.jpg);
 	background-position: center;
 	background-size: cover;
+	-webkit-transition: filter .2s ease-in-out;
+    -moz-transition: filter .2s ease-in-out;
+    -o-transition: filter .2s ease-in-out;
+    transition: filter .2s ease-in-out;
+}
+
+.sociallinks {
+	color: white;
+	margin-top: 0;
+	font-size: 125%;
+	font-family: "Lato", sans-serif;
+	font-style: italic;
+	
+}
+
+.sociallinks {
+	cursor: default;
+}
+
+.sociallinks a {
+	color: white;
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+.sociallinks a:visited{
+	color: white;
+}
+.sociallinks a[href="http://www.twitter.com/will_eccles"]:hover {
+	color: #5ea9dd;
+}
+.sociallinks a[href="https://www.flickr.com/photos/will_eccles/"]:hover {
+	color: #ff0084;
+}
+.sociallinks a[href="http://www.instagram.com/willeccles"]:hover {
+	color: #517fa4;
 }
 
 .content {
