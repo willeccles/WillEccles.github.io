@@ -104,7 +104,10 @@ body {
 	color: #ff0084;
 }
 .sociallinks a[href="http://www.instagram.com/willeccles"]:hover {
-	color: #517fa4;
+	color: #9f775b;
+}
+.sociallinks a[href="https://www.coinbase.com/willeccles"]:hover {
+	color: #f7931a;
 }
 
 .content {
