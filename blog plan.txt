@@ -1,0 +1,18 @@
+post:
+...
+<body>
+	js-loaded md files
+</body>
+...
+
+home:
+...
+<content>
+	list of last 3-5 md files, quick previews, titles, dates
+	loaded by js
+</content>
+...
+
+clicking title of post -> js loads rest of post into the post page outlined above
+
+**need a MD interpreter for js
