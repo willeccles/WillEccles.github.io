@@ -16,3 +16,5 @@ home:
 clicking title of post -> js loads rest of post into the post page outlined above
 
 **need a MD interpreter for js
+
+edit: check this one out: http://strapdownjs.com/
