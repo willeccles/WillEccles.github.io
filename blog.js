@@ -51,6 +51,10 @@ function entryHTML(title, date, contentArray) {
 	entry += '\n<div class="entryTitle">' + title + '</div>';
 	entry += '\n<div class="entryDate">' + parseDate(date) + '</div>';
 	entry += '\n<p class="entryPreview">' + content.trim() + '</div>';
+	
+	entry += '</div>';
+	
+	return entry;
 }
 
 // parse a date. 10 26 2015 = October 26, 2015
