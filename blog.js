@@ -9,7 +9,7 @@ var entriesFolder = "/entries/";
 
 // when the blog area loads
 // (hint: this is where you load the blog)
-window.onload = function() {
+function loadBlog() {
 	console.info("Loading blog...");
 	
 	// load blog into page
