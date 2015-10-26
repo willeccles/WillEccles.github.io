@@ -127,8 +127,26 @@ body {
 	color: black;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
+	font-size: 250%;
 }
 
-.blogEntries {
+/*  BLOG ENTRIES AND SUCH  */
+.entry {
 	border-left: 3px solid black;
+	padding-left: 15px;
+	font-family: "Lato", sans-serif;
+}
+
+.entryTitle {
+	font-weight: 900;
+	font-size: 175%;
+}
+
+.entryDate {
+	font-style: italic;
+	padding-left: 15px;
+}
+
+.entryPreview {
+	padding-left: 15px;
 }
