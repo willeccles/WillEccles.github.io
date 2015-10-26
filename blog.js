@@ -16,7 +16,7 @@ window.onload = function() {
 	var client = new XMLHttpRequest();
 	client.open('GET', dir() + '/entries/ebola.txt');
 	client.onreadystatechange = function() {
-		var entryParts = client.responseText.split("\n");
+		var entryParts = client.responseText.split("|");
 		
 		var entryTitle = entryParts[0].replace(new RegExp("TITLE: *"), "");
 		var entryDate = entryParts[1].replace(new RegExp("DATE: *"), "");
