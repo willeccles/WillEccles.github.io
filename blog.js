@@ -7,6 +7,8 @@
 var blogArea = document.getElementById("blogEntries");
 var entriesFolder = "/entries/";
 
+var previousTitle = "";
+
 // when the blog area loads
 // (hint: this is where you load the blog)
 function loadBlog() {
@@ -14,14 +16,17 @@ function loadBlog() {
 	
 	// load blog into page
 	var client = new XMLHttpRequest();
-	client.open('GET', dir() + '/entries/ebola.txt');
+	client.open('GET', dir() + '/entries/ebola.txt', true);
 	client.onreadystatechange = function() {
 		var entryParts = client.responseText.split("|");
 		
 		var entryTitle = entryParts[0].replace(new RegExp("TITLE:( *)?"), "");
 		var entryDate = entryParts[1].replace(new RegExp("DATE:( *)?"), "");
 		
-		blogArea.innerHTML += entryHTML(entryTitle, entryDate, entryParts);
+		if (entryTitle != previousTitle) {
+			blogArea.innerHTML += entryHTML(entryTitle, entryDate, entryParts);
+			previousTitle = entryTitle;
+		}
 	}
 	client.send();
 };
