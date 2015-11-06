@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300italic,300,700italic);
 
 html {
 	width: 100%;
@@ -115,8 +115,8 @@ body {
 .content {
 	margin-top: 15px;
 	background-color: white;
-	
-	width: 850px;
+	font-family: "Lato", sans-serif;
+	width: 750px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -126,32 +126,53 @@ body {
 	margin-bottom: 25px;
 }
 
-.blogTitle {
-	color: black;
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
-	font-size: 250%;
+.left-bar {
+	display: inline-block;
+	border-right: solid black 4px;
+	text-align: right;
+	width: 117px;
+	margin-top: 45px;
+	height: 250px;
 }
 
-/*  BLOG ENTRIES AND SUCH  */
-.entry {
-	border-left: 3px solid black;
-	padding-left: 15px;
-	font-family: "Lato", sans-serif;
+.left-bar .tab {
+	background-color: black;
+	color: white;
+	text-align: right;
+	line-height: 30px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 8px;
+	padding-right: 8px;
+	width: 70px;
+	cursor: pointer;
+	margin-right: 8px;
+	font-weight: 300;
+	text-transform: uppercase;
+	
+	-webkit-transition: width .15s ease-in-out;
+    -moz-transition: width .15s ease-in-out;
+    -o-transition: width .15s ease-in-out;
+    transition: width .15s ease-in-out;
 }
 
-.entryTitle {
-	font-weight: 900;
-	font-size: 175%;
+.left-bar .tab:hover {
+	width: 100px;
 }
 
-.entryDate {
-	font-style: italic;
-	padding-left: 15px;
+.maincontent {
+	display: inline-block;
+	margin-left: 60px;
 }
 
-.entryPreview {
-	padding-left: 15px;
+.maincontent h1 {
+	font-size: 300%;
+}
+
+.maincontent p {
+	margin-top: -20px;
+	padding-left: 10px;
+	border-left: dashed gray 1px;
 }
 
 .footer {

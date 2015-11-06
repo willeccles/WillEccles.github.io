@@ -1,6 +1,0 @@
-TITLE: This is a Test Entry|DATE:10 26 2015|
-
-This is the content of the entry. I really like how it has no meaning but is here anyway. Cool, huh?
-
-This is another paragraph. Wish it looked nice.
-This is a new line in the same paragraph (sort of)
