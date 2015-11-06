@@ -4,7 +4,7 @@
 		<title>Will Eccles</title>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
-	<body>
+	<body onload="setUpTabs()">
 		<span id="header" class="header">
 			<div id="header-avi" class="centered"><!--this is where my avatar will be put--></div>
 			<h1>Will Eccles</h1>
@@ -26,23 +26,16 @@
 				<table>
 					<tr>
 						<td>
-							<div id="left-bar" class="left-bar">
-								<a id="about" class="tab about" onclick="about()">about</a><br/>
-								<a id="social" class="tab social" onclick="social()">social</a><br/>
-								<a id="junk"class="tab junk" onclick="junk()">junk</a>
+							<div id="left-bar" class="left-bar noselect">
+								<a id="about" class="tab about selected" onclick="tabSwitch(this.id)">about</a><br/>
+								<a id="social" class="tab social" onclick="tabSwitch(this.id)">social</a><br/>
+								<a id="junk"class="tab junk" onclick="tabSwitch(this.id)">junk</a>
 							</div>
 						</td>
 						<td>
 							<div id="maincontent" class="maincontent">
-								<h1 class="contentTitle">About</h1>
-								<p class="contentBody">
-									dsifosnwidufniswudnfiosandf<br/>
-									lasjfdojhawoijosidjfoaisjdf<br/>
-									sdafasdfasdfasdfasdfasdfasdf<br/>
-									gferegwergwergwergdfgsdthrhh<br/>
-									gieuhidfuhgisudhfiguhsdifguhi<br/>
-									sdufhikasduhfiusahdifuhasidfuhasd
-								</p>
+								<h1 id="contentTitle" class="contentTitle"></h1>
+								<p id="contentBody" class="contentBody"></p>
 							</div>
 						</td>
 					</tr>
@@ -51,7 +44,8 @@
 		</div>
 		
 		<div class="footer centered">&COPY; Will Eccles 2015<br/>All rights reserved.</div>
-
+		
+		<script type="text/javascript" src="content.js"></script>
 		<script type="text/javascript" src="retina.min.js"></script>
 	</body>
 </html>

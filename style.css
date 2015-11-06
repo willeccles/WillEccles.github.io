@@ -126,6 +126,10 @@ body {
 	margin-bottom: 25px;
 }
 
+td {
+	vertical-align: top;
+}
+
 .left-bar {
 	display: inline-block;
 	border-right: solid black 4px;
@@ -150,18 +154,36 @@ body {
 	font-weight: 300;
 	text-transform: uppercase;
 	
-	-webkit-transition: width .15s ease-in-out;
-    -moz-transition: width .15s ease-in-out;
-    -o-transition: width .15s ease-in-out;
-    transition: width .15s ease-in-out;
+	-webkit-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
+    -moz-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
+    -o-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
+    transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
 }
 
 .left-bar .tab:hover {
-	width: 100px;
+	width: 95px;
+	background-color: #363636;
+	padding-right: 14px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.selected {
+	width: 100px !important;
+	background-color: #545353 !important;
+	cursor: default !important;
+	padding-right: 17px !important;
 }
 
 .maincontent {
-	display: inline-block;
+	display: block;
 	margin-left: 60px;
 }
 
@@ -173,6 +195,11 @@ body {
 	margin-top: -20px;
 	padding-left: 10px;
 	border-left: dashed gray 1px;
+}
+
+.contentBody {
+	font-size: 125%;
+	font-weight: 300;
 }
 
 .footer {
