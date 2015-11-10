@@ -35,9 +35,9 @@ function ageString() {
 	}
 }
 
-var aboutContent = "Will Eccles is " + ageString() + " programmer, swimmer, photographer, and regular internet-user. <br/><br/> [WIP]";
-var socialContent = "";
-var junkContent = "";
+var aboutContent = "<div class=\"intro\">Will Eccles is " + ageString() + " programmer, swimmer, photographer, and regular internet-user.</div><br/><br/>I sometimes work on web design (like this page), desktop apps, and sometimes a little graphics. I often take photos when I see an opportunity, and I post the best ones to <a data-site=\"flickr\" href=\"https://www.flickr.com/photos/will_eccles/\">Flickr</a> and my more mediocre ones to <a data-site=\"instagram\" href=\"https://www.instagram.com/willeccles\">Instagram</a>.<br/><br/>This page was made entirely by hand, every pixel crafted to perfectly fit what I wanted from it. If you like it (or don't!) let me know on <a data-site=\"twitter\" href=\"https://www.twitter.com/will_eccles\">Twitter</a>! The site changes frequently :)";
+var socialContent = "Even though my social links are above, I figured I would add this tab because inevitably someone would not see the buttons above. There are a few ways you can connect with me:<br/><ul><li><a data-site=\"twitter\" href=\"https://www.twitter.com/will_eccles\">Twitter</a> (preferred)</li><li><a data-site=\"instagram\" href=\"https://www.instagram.com/willeccles\">Instagram</a></li><li><a data-site=\"flickr\" href=\"https://www.flickr.com/photos/will_eccles/\">Flickr</a></li></ul>";
+var junkContent = "Eventually, this page will be changed to a portfolio of my best programs and such, but for now I am working on making the site function perfectly. This site is ever-changing, remember!";
 
 var lastTab = "about";
 

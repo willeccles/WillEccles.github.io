@@ -116,7 +116,7 @@ body {
 	margin-top: 15px;
 	background-color: white;
 	font-family: "Lato", sans-serif;
-	width: 750px;
+	width: 800px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -197,10 +197,64 @@ td {
 	border-left: dashed gray 1px;
 }
 
+.contentBody .intro {
+	font-style: italic;
+	display: inline;
+	color: slategray;
+}
+
 .contentBody {
 	font-size: 125%;
 	font-weight: 300;
 }
+
+.contentBody ul {
+	display: inline-block;
+}
+
+.contentBody a {
+	color: black;
+	text-decoration: none;
+	-webkit-transition: color .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+.contentBody a:visited {
+	color: black;
+}
+.contentBody a::before {
+	content: "[";
+	color: lightgray;
+	-webkit-transition: color .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+.contentBody a::after {
+	content: "]";
+	color: lightgray;
+	-webkit-transition: color .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+.contentBody a:hover::after {
+	color: black;
+}
+.contentBody a:hover::before {
+	color: black;
+}
+.contentBody a[data-site="twitter"]:hover {
+	color: #5ea9dd;
+}
+.contentBody a[data-site="instagram"]:hover {
+	color: #9f775b;
+}
+.contentBody a[data-site="flickr"]:hover {
+	color: #ff0084;
+}
+
 
 .footer {
 	display: block;
