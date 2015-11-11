@@ -27,15 +27,19 @@
 					<tr>
 						<td>
 							<div id="left-bar" class="left-bar noselect">
-								<a id="about" class="tab about selected" onclick="tabSwitch(this.id)">about</a><br/>
-								<a id="social" class="tab social" onclick="tabSwitch(this.id)">social</a><br/>
-								<a id="junk"class="tab junk" onclick="tabSwitch(this.id)">junk</a>
+								<a id="about" class="tab about selected" onclick="tabSwitch(this.id, this.className)">about</a><br/>
+								<a id="social" class="tab social" onclick="tabSwitch(this.id, this.className)">social</a><br/>
+								<a id="portfolio" class="tab portfolio longtext" onclick="tabSwitch(this.id, this.className)">portfolio</a>
 							</div>
 						</td>
 						<td>
 							<div id="maincontent" class="maincontent">
-								<h1 id="contentTitle" class="contentTitle"></h1>
-								<p id="contentBody" class="contentBody"></p>
+								<h1 id="contentTitle" class="contentTitle">
+									<noscript>Uh oh :(</noscript>
+								</h1>
+								<p id="contentBody" class="contentBody">
+									<noscript>Looks like your browser does not support JavaScript or you have turned it off. This page requires JavaScript to work right. Don't worry, it's safe! Go ahead and turn it back on. JavaScript is a safe way for developers to make their pages better and nicer for you to use - if you don't believe me, read about it <a href="https://en.wikipedia.org/wiki/JavaScript">here!</a> (Warning: that page contains a lot of nerd-speak!)</noscript>
+								</p>
 							</div>
 						</td>
 					</tr>

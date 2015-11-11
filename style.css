@@ -100,7 +100,7 @@ body {
 	color: white;
 }
 .sociallinks a[href="http://www.twitter.com/will_eccles"]:hover {
-	color: #5ea9dd;
+	color: #4099ff;
 }
 .sociallinks a[href="https://www.flickr.com/photos/will_eccles/"]:hover {
 	color: #ff0084;
@@ -154,10 +154,10 @@ td {
 	font-weight: 300;
 	text-transform: uppercase;
 	
-	-webkit-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
-    -moz-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
-    -o-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
-    transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out;
+	-webkit-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
+    -moz-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
+    -o-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
+    transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
 }
 
 .left-bar .tab:hover {
@@ -165,6 +165,14 @@ td {
 	background-color: #363636;
 	padding-right: 14px;
 }
+
+.longtext {
+	font-size: 70%;
+}
+.longtext:hover {
+	font-size: 100% !important;
+}
+
 
 .noselect {
     -webkit-touch-callout: none;
@@ -180,6 +188,7 @@ td {
 	background-color: #545353 !important;
 	cursor: default !important;
 	padding-right: 17px !important;
+	font-size: 100% !important;
 }
 
 .maincontent {
@@ -246,7 +255,7 @@ td {
 	color: black;
 }
 .contentBody a[data-site="twitter"]:hover {
-	color: #5ea9dd;
+	color: #4099ff;
 }
 .contentBody a[data-site="instagram"]:hover {
 	color: #9f775b;
@@ -265,4 +274,12 @@ td {
 	text-align: center;
 	margin-bottom: 8px;
 	margin-top: 5px;
+}
+
+/* accounts for iPhone 6+ display, which will work for most other phones as well */
+@media screen and (max-width: 414px) {
+	.header {
+		height: 75px !important;
+		background-image: url(bgimg-mobile.jpg) !important;
+	}
 }
