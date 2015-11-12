@@ -2,12 +2,17 @@
 <html>
 	<head>
 		<title>Will Eccles</title>
-		<link rel="stylesheet" href="style.css"></link>
+		<link rel="stylesheet" href="style.css"/>
+		<!-- should work for most modern devices. If not, I'll fix it. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" media="screen and (max-width: 516px)" href="mobile.css"/>
+		
 	</head>
 	<body onload="setUpTabs()">
 		<span id="header" class="header">
 			<div id="header-avi" class="centered"><!--this is where my avatar will be put--></div>
 			<h1>Will Eccles</h1>
+			<hr class="mobile-nameline"/>
 			<h3>Programmer, photographer, swimmer.</h3>
 			<span class="sociallinks">
 				<a href="http://www.twitter.com/will_eccles">Twitter</a>
@@ -22,17 +27,22 @@
 		
 		<div class="content">
 			<!--main content of the site, located at the bottom-->
+			<!-- this is the mobile-only stuff - the rest is at the bottom -->
+			<img class="mobile-menu-icon" src="menu-icon.png" onclick="openMobileMenu()"/>
+			
 			<span>
 				<table>
 					<tr>
-						<td>
+						<td class="lefttd">
 							<div id="left-bar" class="left-bar noselect">
 								<a id="about" class="tab about selected" onclick="tabSwitch(this.id, this.className)">about</a><br/>
 								<a id="social" class="tab social" onclick="tabSwitch(this.id, this.className)">social</a><br/>
 								<a id="portfolio" class="tab portfolio longtext" onclick="tabSwitch(this.id, this.className)">portfolio</a>
+								
+								<div class="footer mobile centered">&COPY; Will Eccles 2015<br/>All rights reserved.</div>
 							</div>
 						</td>
-						<td>
+						<td class="righttd">
 							<div id="maincontent" class="maincontent">
 								<h1 id="contentTitle" class="contentTitle">
 									<noscript>Uh oh :(</noscript>
@@ -47,7 +57,7 @@
 			</span>
 		</div>
 		
-		<div class="footer centered">&COPY; Will Eccles 2015<br/>All rights reserved.</div>
+		<div class="footer desktop centered">&COPY; Will Eccles 2015<br/>All rights reserved.</div>
 		
 		<script type="text/javascript" src="content.js"></script>
 		<script type="text/javascript" src="retina.min.js"></script>

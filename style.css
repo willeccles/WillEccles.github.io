@@ -5,6 +5,7 @@ html {
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: visible;
+	background-color: white;
 }
 
 body {
@@ -46,7 +47,10 @@ body {
 	font-size: 300%;
 	margin-top: 0;
 	margin-bottom: 0;
-	
+}
+
+.mobile-nameline {
+	display: none;
 }
 
 .header h3 {
@@ -70,10 +74,6 @@ body {
 	background-image: url(avatar.jpg);
 	background-position: center;
 	background-size: cover;
-	-webkit-transition: filter .2s ease-in-out;
-    -moz-transition: filter .2s ease-in-out;
-    -o-transition: filter .2s ease-in-out;
-    transition: filter .2s ease-in-out;
 }
 
 .sociallinks {
@@ -114,16 +114,29 @@ body {
 
 .content {
 	margin-top: 15px;
-	background-color: white;
+	background-color: none;
 	font-family: "Lato", sans-serif;
-	width: 800px;
+	/* width moved below */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 5px;
 	padding-right: 5px;
-	
 	margin-bottom: 25px;
+}
+
+@media screen and (min-width: 800px) {
+	.content {
+		width: 800px;
+	}
+}
+@media screen and (max-width: 799px) {
+	.content {
+		width: 100%;
+	}
+	.content .lefttd {
+		min-width: 117px;
+	}
 }
 
 td {
@@ -276,10 +289,10 @@ td {
 	margin-top: 5px;
 }
 
-/* accounts for iPhone 6+ display, which will work for most other phones as well */
-@media screen and (max-width: 414px) {
-	.header {
-		height: 75px !important;
-		background-image: url(bgimg-mobile.jpg) !important;
-	}
+.footer.mobile {
+	display: none;
+}
+
+.mobile-menu-icon {
+	display: none;
 }
