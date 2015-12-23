@@ -15,6 +15,7 @@ body {
 	margin-top: 0;
 	height: 100%;
 	width: 100%;
+    padding-bottom: 0;
 }
 
 .centered {
@@ -108,12 +109,12 @@ body {
 .sociallinks a[href="http://www.instagram.com/willeccles"]:hover {
 	color: #9f775b;
 }
-.sociallinks a[href="https://www.coinbase.com/willeccles"]:hover {
-	color: #f7931a;
+.sociallinks a[href="https://www.github.com/willeccles"]:hover {
+	color: #ff9500;
 }
 
 .content {
-	margin-top: 15px;
+    margin-top: -15px;
 	background-color: none;
 	font-family: "Lato", sans-serif;
 	/* width moved below */
@@ -295,4 +296,12 @@ td {
 
 .mobile-menu-icon {
 	display: none;
+}
+
+.mobile-social {
+    display: none;
+}
+
+.mobile-break {
+    display: none;
 }

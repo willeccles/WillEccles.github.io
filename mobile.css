@@ -44,6 +44,11 @@
 
 .contentTitle {
 	font-size: 200% !important;
+    display: none; /* may change, but for now is nonexistent. */
+}
+
+.content {
+    margin-top: 15px;
 }
 
 .content table {
@@ -69,7 +74,53 @@
 
 .maincontent {
 	margin-left: 0;
-	margin-top: 100px;
+	margin-top: 135px;
 	padding-right: 10px;
 	position: static;
 }
+
+.maincontent p {
+    border: none;
+}
+
+.mobile-social {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20px;
+    width: 208px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+
+.mobile-social-icon {
+    display: inline-block;
+    margin: 8px;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.mobile-break {
+    display: inline;
+}
+
+/* deprecated
+.mobile-social-menu {
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: block;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.open {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}*/

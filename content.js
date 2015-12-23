@@ -60,3 +60,40 @@ function setUpTabs() {
 function openMobileMenu() {
 	
 }
+
+// handle social links on mobile.
+function social(arg) {
+    switch(arg) {
+        case 'twitter':
+        document.location.href = "http://www.twitter.com/will_eccles";
+        break;
+        case 'flickr':
+        document.location.href = "http://www.flickr.com/will_eccles";
+        break;
+        case 'instagram':
+        document.location.href = "http://www.instagram.com/willeccles";
+        break;
+        case 'github':
+        document.location.href = "http://www.github.com/willeccles";
+        break;
+    }
+}
+
+/* DEPRECATED
+var isOpen = false;
+var chevron = document.getElementById("chevron");
+
+// open/close the mobile social menu
+function mSMenu() {
+    if (isOpen) {
+        // close it
+        chevron.className = "mobile-social-menu";
+        isOpen = false;
+    }
+    else {
+        // open it
+        chevron.className = "mobile-social-menu open";
+        isOpen = true;
+    }
+}
+*/
