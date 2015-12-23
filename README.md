@@ -1,4 +1,4 @@
 # WillEccles.github.io
-my personal github page (pages.github.com)
+My personal github page (pages.github.com).
 
-This will be added some time. Hopefully within the next 324 years. Maybe.
+Finally working to a point where I would be happy to leave it for a while (though I still have to update the portfolio).
