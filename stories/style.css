@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,500,900);
+/* make sure that the fonts above are trimmed down to those needed only */
+
+.storyTitle {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 900;
+	margin-bottom: 0;
+	font-size: 350%;
+	margin-top: 0;
+}
+
+.storyDate {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 200;
+	margin-top: -5px;
+	margin-bottom: 0;
+	font-size: 150%;
+}
+
+.storyText {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	font-size: 125%;
+	margin-top: 10px;
+}
