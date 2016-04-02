@@ -1,57 +1,75 @@
-var sTitle;
-var sBody;
-var sDate;
+var sTitle = "";
+var sBody = "";
+var sDate = "";
 var error = false;
+var hasLoaded = false;
 
-// this happens right when the document starts loading
 // this should be where I load the file, etc.
-document.onload = function() {
-	// TODO: handle loading here, so that the user doesn't have to look at a blank page for a while if it takes a while to load the story
+window.onload = function() {
+	// ;)
+	console.info("If you are reading this, then you may be interested in the source code.\nIf you want to see it, I have put it on github under the Apache license, as usual.\nRepo: https://github.com/willeccles/willeccles.github.io/\nThis page is at stories/stories.html\nHave a good day!");
 	
-	console.log("hello");
+	// TODO: handle loading here, so that the user doesn't have to look at a blank page for a while if it takes a while to load the story
 	
 	var today = new Date();
 	sDate = today;
-	var fpath = today.getFullYear().toString() + '-' + today.getMonth().toString() + '-' + today.getDate().toString() + '.txt';
+	var fpath = today.getFullYear().toString() + '-' + (today.getMonth()+1).toString() + '-' + today.getDate().toString() + '.txt';
 	
-	var client = new XMLHttpRequest();
-	
-	console.log(dir() + "/entries/" + fpath);
-	client.open('GET', dir() + '/entries/' + fpath, true); // true = async
-	// these two are the same
-	client.ontimeout = function() {
-		console.error("Error loading file: " + fpath);
-		sTitle = "Uh-oh :(";
-		sBody = "<p>Unfortunately, there was a problem. Either the story could not be loaded or hasn't been uploaded. Tweet me at @Will_Eccles and I'll see what I can do. Sorry!</p>";
-		error = true;
-		writeStory();
-	};
-	client.onerror = function() {
-		console.error("Error loading file: " + fpath);
-		sTitle = "Uh-oh :(";
-		sBody = "<p>Unfortunately, there was a problem. Either the story could not be loaded or hasn't been uploaded. Tweet me at @Will_Eccles and I'll see what I can do. Sorry!</p>";
-		error = true;
-		writeStory();
-	};
-	client.onreadystatechange = function() {
-		// now we parse the client response text
-		// first line is the title, the rest = paragraphs
-		var storyParts = client.responseText.split(/$/g);
+	// file IO stuff
+	try {
+		var client = new XMLHttpRequest();
 		
-		// store the story info
-		sTitle = storyParts[0];
-		// start at 1, since 0 is the title
-		for (var i = 1; i < storyParts.length; i++) {
-			// just in case I somehow get a line that's just a space or something like that
-			if (/^\t?(\w\s)+.*$/g.test(storyParts[i])) {
-				// wrap the line (paragraph) in <p></p>
-				sBody += '<p>' + storyParts[i] + '</p>';
+		console.info("Today's file should be " + dir() + "/entries/" + fpath);
+		
+		client.open('GET', dir() + '/entries/' + fpath, true); // true = async
+		
+		// these two are the same
+		client.ontimeout = function() {
+			console.error("Error loading file: " + fpath);
+			sTitle = "Uh-oh :(";
+			sBody = "<p>Unfortunately, there was a problem. Either the story could not be loaded or hasn't been uploaded. Tweet me at @Will_Eccles and I'll see what I can do. Sorry!</p>";
+			error = true;
+			writeStory();
+		};
+		client.onerror = function() {
+			console.error("Error loading file: " + fpath);
+			sTitle = "Uh-oh :(";
+			sBody = "<p>Unfortunately, there was a problem. Either the story could not be loaded or hasn't been uploaded. Tweet me at @Will_Eccles and I'll see what I can do. Sorry!</p>";
+			error = true;
+			writeStory();
+		};
+		
+		client.onreadystatechange = function() {
+			// readystate 4 = DONE, but this will run many times if it changes to anything else, so return if not DONE
+			if (client.readyState != 4) return;
+			// now we parse the client response text
+			// first line is the title, the rest = paragraphs
+			var storyParts = client.responseText.split(/\n/);
+			
+			// store the story info
+			sTitle = storyParts[0].trim();
+			// start at 1, since 0 is the title
+			for (var i = 1; i < storyParts.length; i++) {
+				// just in case I somehow get a line that's just a space or something like that
+				if (/^\t?[A-Za-z0-9"].*$/gm.test(storyParts[i])) {
+					// wrap the line (paragraph) in <p></p>
+					sBody += '<p>' + storyParts[i] + '</p>';
+				}
 			}
-		}
+			
+			// load the text into DOM
+			writeStory();
+		};
+	
+		client.send();
 		
-		// load the text into DOM
+	} catch(e) {
+		console.log(e);
+		sTitle = "Uh-oh :(";
+		sBody = "<p>Unfortunately, there was a problem. Either the story could not be loaded or hasn't been uploaded. Tweet me at @Will_Eccles and I'll see what I can do. Sorry!</p>";
+		error = true;
 		writeStory();
-	};
+	}
 }
 
 // print the story to the DOM
