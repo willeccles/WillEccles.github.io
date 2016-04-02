@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,500,900);
 /* make sure that the fonts above are trimmed down to those needed only */
 
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 .storyTitle {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: 900;
