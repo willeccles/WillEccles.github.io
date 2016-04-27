@@ -4,6 +4,16 @@ var sDate = "";
 var error = false;
 var hasLoaded = false;
 
+/*
+each scheme is in this format:
+["darkprimarycolor", "primarycolor", "lightprimarycolor", "accentcolor", "primarytext", "secondarytext"]
+this does not have to be this way, since I may only need a few of these colors
+schemes are made at www.materialpallete.com
+*/
+const colorSchemes = [
+	[]
+];
+
 // this should be where I load the file, etc.
 window.onload = function() {
 	// ;)
@@ -109,4 +119,8 @@ function dir() {
  	var dir = loc.substring(0, loc.lastIndexOf("/"));
  	
  	return dir;
+}
+
+function colorScheme() {
+	
 }

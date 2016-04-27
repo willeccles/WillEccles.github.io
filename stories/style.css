@@ -4,6 +4,24 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	background-color: #ffefe1;
+}
+
+.storiesContainer {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 800px) {
+	.storiesContainer {
+		width: 800px;
+	}
+}
+@media screen and (max-width: 799px) {
+	.storiesContainer {
+		width: 100%;
+	}
 }
 
 .storyTitle {
@@ -27,4 +45,29 @@ html, body {
 	font-weight: 500;
 	font-size: 125%;
 	margin-top: 10px;
+}
+
+.themes {
+	display: block;
+	position: absolute;
+	z-index: 1000;
+	top: 20px;
+	right: 20px;
+}
+
+.themebutton {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	border: solid white 3px;
+	border-radius: 100%;
+	box-shadow: 0 0 2px black, 0 0 2px black inset;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.light {
+	background-color: #ffefe1;
+}
+.dark {
+	background-color: rgb(55, 64, 70);
 }
