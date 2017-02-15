@@ -126,6 +126,7 @@ body {
 	margin-bottom: 25px;
 }
 
+/* media queries for different screen sizes */
 @media screen and (min-width: 800px) {
 	.content {
 		width: 800px;
@@ -304,4 +305,30 @@ td {
 
 .mobile-break {
     display: none;
+}
+
+.portfolio-github-item {
+    display: block;
+    width: 350px;
+    height: 100px;
+    border: solid black 2px;
+}
+
+.github-desc {
+    display: block;
+    margin-top: 10px !important;
+    margin-left: 10px;
+	padding-left: 0 !important;
+    border: none !important;
+}
+
+.git-icon {
+    display: inline-block;
+    margin: 5px;
+}
+
+.git-title {
+    display: inline-block;
+    height: 42px;
+    vertical-align: middle;
 }
