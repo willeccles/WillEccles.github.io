@@ -6,90 +6,21 @@
 		<!-- should work for most modern devices. If not, I'll fix it. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" media="screen and (max-width: 516px)" href="mobile.css"/>
-		
 	</head>
 	<body onload="setUpTabs()">
-		<span id="header" class="header">
-			<div id="header-avi" class="centered"><!--this is where my avatar will be put--></div>
-			<h1>Will Eccles</h1>
-			<hr class="mobile-nameline"/>
-			<h3>Programmer, photographer, swimmer.</h3>
-			<span class="sociallinks">
-				<a href="http://www.twitter.com/will_eccles">Twitter</a>
-				&nbsp~&nbsp
-				<a href="http://www.instagram.com/willeccles">Instagram</a>
-				&nbsp~&nbsp
-				<a href="https://www.flickr.com/photos/will_eccles/">Flickr</a>
-				&nbsp~&nbsp
-				<a href="https://www.github.com/willeccles">Github</a>
-			</span>
-		</span>
-        
-		<div class="content">
-			<!--main content of the site, located at the bottom-->
 
-			<span>
-				<table>
-					<tr>
-						<td class="lefttd">
-							<div id="left-bar" class="left-bar noselect">
-								<a id="about" class="tab about selected" onclick="tabSwitch(this.id, this.className)">about</a><br/>
-								<a id="social" class="tab social" onclick="tabSwitch(this.id, this.className)">social</a><br/>
-								<a id="portfolio" class="tab portfolio longtext" onclick="tabSwitch(this.id, this.className)">portfolio</a>
-								
-								<div class="footer mobile centered">&COPY; Will Eccles 2015<br/>All rights reserved.</div>
-							</div>
-						</td>
-						<td class="righttd">
-							<div id="maincontent" class="maincontent">
-                                <div class="mobile-social" id="mobile social icons">
-                                        <img class="mobile-social-icon" src="mobile-twitter.png" onclick="social('twitter')"/>
-                                        <img class="mobile-social-icon" src="mobile-ig.png" onclick="social('instagram')"/>
-                                        <img class="mobile-social-icon" src="mobile-flickr.png" onclick="social('flickr')"/>
-                                        <img class="mobile-social-icon" src="mobile-github.png" onclick="social('github')"/>
-                                </div>
-                                <br class="mobile-break"/>
-								<h1 id="contentTitle" class="contentTitle">
-                                    <!--Portfolio Preview-->
-									<noscript>Uh oh :(</noscript>
-								</h1>
-								<p id="contentBody" class="contentBody">
-									<!-- TESTING
-									<div class="intro">This is my portfolio</div>
-                                    <br/>
-                                    <div class="portfolio-github-item">
-                                        <img class="git-icon" src="mobile-github.png"/>
-                                        <a class="git-title" href="https://github.com/willeccles/minepanel">Minepanel</a>
-                                        <p class="github-desc">
-                                            
-                                            An easy-to-use GUI that manages your Minecraft server for you.
-                                        </p>
-                                    </div>
-                                    -->
-                                    
-                                    <noscript>Looks like your browser does not support JavaScript or you have turned it off. This page requires JavaScript to work right. Don't worry, it's safe! Go ahead and turn it back on. JavaScript is a safe way for developers to make their pages better and nicer for you to use - if you don't believe me, read about it <a href="https://en.wikipedia.org/wiki/JavaScript">here!</a> (Warning: that page contains a lot of nerd-speak!)</noscript>
-								</p>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</span>
-		</div>
-		
-		<div class="footer desktop centered">&COPY; Will Eccles 2015<br/>All rights reserved.</div>
-		
 		<script type="text/javascript" src="content.js"></script>
 		<script type="text/javascript" src="retina.min.js"></script>
+		<!--google analytics script-->
 		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-63609219-1', 'auto');
-  ga('require', 'linkid');
-  ga('send', 'pageview');
-
-</script>
+			ga('create', 'UA-63609219-1', 'auto');
+			ga('require', 'linkid');
+			ga('send', 'pageview');
+		</script>
 	</body>
 </html>
