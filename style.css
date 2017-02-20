@@ -64,3 +64,23 @@ html, body {
 	margin-left: 20px;
 	margin-right: 20px;
 }
+
+.socialBox {
+	display: block;
+	position: sticky;
+	position: -webkit-sticky;
+	height: auto;
+	top: 50%;
+	-webkit-transform: translate(20px, -50%);
+	-ms-transform: translate(20px, -50%);
+	transform: translate(20px, -50%);
+}
+
+.socialButton {
+	/* this should be done per-button for a cleaner margin, and without one on the bottom of the last button */
+	margin-bottom: 15px;
+	height: 70px;
+	width: 70px;
+	background-color: blue;
+	border-radius: 35px;
+}
