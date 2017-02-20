@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,200i,300,300i,400');
 
 html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: #37474f;
+	overflow-x:hidden;
 }
 
 .topbar {
@@ -17,9 +19,22 @@ html, body {
 	display: block;
 	height: 80px;
 	max-height: 80px;
-	background-color: #3F51B5;
+	background-color: #FB8C00;
 	padding-top: 5px;
+	padding-left: 8px;
 	box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+}
+
+.headingname {
+	display: inline-block;
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 300%;
+	top: 14.5px;
+	margin: 0;
+	margin-left: 15px;
+	color: white;
 }
 
 .centered {
@@ -28,6 +43,7 @@ html, body {
 }
 
 .avatar {
+	display: inline-block;
 	background-image: url("avatar.jpg");
 	background-position: center;
 	background-size: cover;
@@ -35,6 +51,37 @@ html, body {
 	width: 70px;
 	border-radius: 37px; /* because with 70+the border, width is effectively 74 */
 	border: 2px solid white;
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
+}
+
+.emailButton {
+	display: inline-block;
+	position: absolute;
+	top: 7.5px;
+	right: 7.5px;
+	margin: 0;
+	margin-right: 7px;
+	height: 70px;
+	width: 70px;
+	background-color: #5D4037;
+	border-radius: 35px;
+}
+.emailButton:hover {
+	cursor: pointer;
+	background-color: #795548;
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
+}
+.emailButton > img {
+	height: 52px;
+	width: 52px;
+	margin-top: 9px;
+	margin-left: 9px;
+	filter: invert(1.0);
+	-webkit-filter: invert(1.0);
+	opacity: 0.65;
+}
+.emailButton:hover > img {
+	opacity: 1.0;
 }
 
 .content {
@@ -44,16 +91,18 @@ html, body {
 	width: 700px;
 	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
 	padding: 10px;
+	background-color: white;
 }
 
 .content > p, h1 {
 	margin: 20px;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .content > h1 {
 	text-align: center;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
 	font-size: 300%;
 }
 
@@ -77,10 +126,45 @@ html, body {
 }
 
 .socialButton {
-	/* this should be done per-button for a cleaner margin, and without one on the bottom of the last button */
-	margin-bottom: 15px;
 	height: 70px;
 	width: 70px;
-	background-color: blue;
+	background-color: #455A64;
 	border-radius: 35px;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.socialButton:hover {
+	background-color: #546E7A;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
+}
+
+.socialButton > img {
+	opacity: 0.65;
+}
+
+.socialButton:hover > img {
+	opacity: 1.0;
+}
+
+.twitterButton > img {
+	height: 64px;
+	width: 64px;
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+.githubButton > img {
+	margin-top: -3px;
+	width: 70px;
+}
+
+.instaButton > img {
+	width: 40px;
+	height: 40px;
+	filter: invert(1.0);
+	-webkit-filter: invert(1.0);
+	margin-top: 15px;
+	margin-left: 15px;
 }
