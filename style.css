@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.topbar {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	height: 80px;
+	max-height: 80px;
+	background-color: #3F51B5;
+	padding-top: 5px;
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.avatar {
+	background-image: url("avatar.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 70px;
+	width: 70px;
+	border-radius: 37px; /* because with 70+the border, width is effectively 74 */
+	border: 2px solid white;
+}
+
+.content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 700px;
+	width: 700px;
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
+	padding: 10px;
+}
+
+.content > p, h1 {
+	margin: 20px;
+	font-family: sans-serif;
+}
+
+.content > h1 {
+	text-align: center;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 300%;
+}
+
+.content > hr {
+	border: 0;
+	background-color: black;
+	height: 1px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
