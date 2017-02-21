@@ -160,6 +160,13 @@ header {
 	margin-right: 20px;
 }
 
+.content a {
+	color: #455A64;
+}
+.content a:visited {
+	color: #455A64;
+}
+
 .socialBox {
 	display: block;
 	position: fixed;
@@ -237,4 +244,50 @@ header {
 	margin-bottom: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 75%;
+}
+
+/* Portfolio stuff (see portfolio.html) */
+
+.portfolioItem {
+	display: block;
+	margin: 20px;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding-bottom: 10px;
+}
+
+/* this will be more of a bar at the top of the item */
+.portfolioItem h2 {
+	padding: 2px;
+	background-color: #5D4037;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
+.portfolioItem h2 > a {
+	text-decoration: none;
+}
+.portfolioItem h2 > a:visited {
+	color: white;
+}
+
+.portfolioItem b {
+	color: #5D4037;
+	padding-left: 15px;
+}
+
+/* every <a> preceded by a <b> */
+.portfolioItem b ~ a {
+	color: #455A64 !important; /* !important keeps :visited from changing it */
+}
+
+/* these are used for descriptions */
+.portfolioItem p {
+	padding-left: 40px;
+	margin: 0;
+	padding-right: 15px;
 }
