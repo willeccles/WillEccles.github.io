@@ -1,0 +1,334 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300italic,300,700italic);
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
+	background-color: white;
+}
+
+body {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	height: 100%;
+	width: 100%;
+    padding-bottom: 0;
+}
+
+.centered {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.header {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	display: block;
+	width: 100%;
+	height: 365px;
+	max-height: 365px;
+	background-image: url(bgimg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 5px black;
+	z-index: 400;
+	box-shadow: inset 0px 0px 12px 0px black;
+}
+
+.header h1 {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 300%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.mobile-nameline {
+	display: none;
+}
+
+.header h3 {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 200%;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#header-avi {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border: solid 3px white;
+	box-shadow: 0px 0px 8px 0px black, inset 0px 0px 5px 1px black;
+	background-image: url(avatar.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.sociallinks {
+	color: white;
+	margin-top: 0;
+	font-size: 125%;
+	font-family: "Lato", sans-serif;
+	font-style: italic;
+}
+
+.sociallinks {
+	cursor: default;
+}
+
+.sociallinks a {
+	color: white;
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+.sociallinks a:visited{
+	color: white;
+}
+.sociallinks a[href="http://www.twitter.com/will_eccles"]:hover {
+	color: #4099ff;
+}
+.sociallinks a[href="https://www.flickr.com/photos/will_eccles/"]:hover {
+	color: #ff0084;
+}
+.sociallinks a[href="http://www.instagram.com/willeccles"]:hover {
+	color: #9f775b;
+}
+.sociallinks a[href="https://www.github.com/willeccles"]:hover {
+	color: #ff9500;
+}
+
+.content {
+    margin-top: -15px;
+	background-color: none;
+	font-family: "Lato", sans-serif;
+	/* width moved below */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 25px;
+}
+
+/* media queries for different screen sizes */
+@media screen and (min-width: 800px) {
+	.content {
+		width: 800px;
+	}
+}
+@media screen and (max-width: 799px) {
+	.content {
+		width: 100%;
+	}
+	.content .lefttd {
+		min-width: 117px;
+	}
+}
+
+td {
+	vertical-align: top;
+}
+
+.left-bar {
+	display: inline-block;
+	border-right: solid black 4px;
+	text-align: right;
+	width: 117px;
+	margin-top: 45px;
+	height: 250px;
+}
+
+.left-bar .tab {
+	background-color: black;
+	color: white;
+	text-align: right;
+	line-height: 30px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 8px;
+	padding-right: 8px;
+	width: 70px;
+	cursor: pointer;
+	margin-right: 8px;
+	font-weight: 300;
+	text-transform: uppercase;
+	
+	-webkit-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
+    -moz-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
+    -o-transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
+    transition: width .15s ease-in-out, background-color .15s ease-in-out, padding-right .15s ease-in-out, font-size .15s ease-in-out;
+}
+
+.left-bar .tab:hover {
+	width: 95px;
+	background-color: #363636;
+	padding-right: 14px;
+}
+
+.longtext {
+	font-size: 70%;
+}
+.longtext:hover {
+	font-size: 100% !important;
+}
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.selected {
+	width: 100px !important;
+	background-color: #545353 !important;
+	cursor: default !important;
+	padding-right: 17px !important;
+	font-size: 100% !important;
+}
+
+.maincontent {
+	display: block;
+	margin-left: 60px;
+}
+
+.maincontent h1 {
+	font-size: 300%;
+}
+
+.maincontent p {
+	margin-top: -20px;
+	padding-left: 10px;
+	border-left: dashed gray 1px;
+}
+
+.contentBody .intro {
+	font-style: italic;
+	display: inline;
+	color: slategray;
+}
+
+.contentBody {
+	font-size: 125%;
+	font-weight: 300;
+}
+
+.contentBody ul {
+	display: inline-block;
+}
+
+.contentBody a {
+	color: black;
+	text-decoration: none;
+	-webkit-transition: color .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+.contentBody a:visited {
+	color: black;
+}
+.contentBody a::before {
+	content: "[";
+	color: lightgray;
+	-webkit-transition: color .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+.contentBody a::after {
+	content: "]";
+	color: lightgray;
+	-webkit-transition: color .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+.contentBody a:hover::after {
+	color: black;
+}
+.contentBody a:hover::before {
+	color: black;
+}
+.contentBody a[data-site="twitter"]:hover {
+	color: #4099ff;
+}
+.contentBody a[data-site="instagram"]:hover {
+	color: #9f775b;
+}
+.contentBody a[data-site="flickr"]:hover {
+	color: #ff0084;
+}
+
+
+.footer {
+	display: block;
+	font-family: "Lato", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 75%;
+	text-align: center;
+	margin-bottom: 8px;
+	margin-top: 5px;
+}
+
+.footer.mobile {
+	display: none;
+}
+
+.mobile-menu-icon {
+	display: none;
+}
+
+.mobile-social {
+    display: none;
+}
+
+.mobile-break {
+    display: none;
+}
+
+.portfolio-github-item {
+    display: block;
+    width: 350px;
+    height: 100px;
+    border: solid black 2px;
+}
+
+.github-desc {
+    display: block;
+    margin-top: 10px !important;
+    margin-left: 10px;
+	padding-left: 0 !important;
+    border: none !important;
+}
+
+.git-icon {
+    display: inline-block;
+    margin: 5px;
+}
+
+.git-title {
+    display: inline-block;
+    height: 42px;
+    vertical-align: middle;
+}
