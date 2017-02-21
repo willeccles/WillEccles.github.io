@@ -23,6 +23,7 @@ html, body {
 	padding-top: 5px;
 	padding-left: 8px;
 	box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+	z-index: 5000;
 }
 
 .headingname {
@@ -67,7 +68,6 @@ html, body {
 	border-radius: 35px;
 }
 .emailButton:hover {
-	cursor: pointer;
 	background-color: #795548;
 	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
 }
@@ -85,13 +85,15 @@ html, body {
 }
 
 .content {
+	display: block;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	max-width: 700px;
-	width: 700px;
+	width: 700px; /*ends up as 720 with the 10px padding*/
 	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
 	padding: 10px;
 	background-color: white;
+	z-index: 500;
 }
 
 .content > p, h1 {
@@ -116,13 +118,15 @@ html, body {
 
 .socialBox {
 	display: block;
-	position: sticky;
-	position: -webkit-sticky;
-	height: auto;
+	position: fixed;
+	height: 310px;
+	width: 70px;
+	margin: 0;
 	top: 50%;
 	-webkit-transform: translate(20px, -50%);
 	-ms-transform: translate(20px, -50%);
 	transform: translate(20px, -50%);
+	z-index: 1000;
 }
 
 .socialButton {
@@ -131,12 +135,12 @@ html, body {
 	background-color: #455A64;
 	border-radius: 35px;
 	padding: 0;
+	display: block;
 	margin-bottom: 15px;
 }
 
 .socialButton:hover {
 	background-color: #546E7A;
-	cursor: pointer;
 	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
 }
 
@@ -167,4 +171,16 @@ html, body {
 	-webkit-filter: invert(1.0);
 	margin-top: 15px;
 	margin-left: 15px;
+}
+
+.footer {
+	text-align: center;
+	width: auto;
+	height: auto;
+	display: block;
+	color: #455A64;
+	margin-top: -5px;
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 75%;
 }
