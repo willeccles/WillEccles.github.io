@@ -84,16 +84,60 @@ header {
 	opacity: 1.0;
 }
 
-.content {
-	display: block;
+.contentContainer {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	max-width: 700px;
-	width: 700px; /*ends up as 720 with the 10px padding*/
+	padding: 0;
 	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
+	max-width: 700px;
+	width: 700px;
+	z-index: 500;
+}
+
+.navbar {
+	display: block;
+	width: 700px;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 150%;
+}
+
+.navItem {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.navItem a {
+	text-align: center;
+	display: block;
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #cc7000;
+	color: #d4d2d2;
+	text-decoration: none;
+}
+
+.selected a {
+	color: white !important;
+	background-color: #FB8C00 !important; /* important so that hover doesn't override */
+}
+
+.navItem a:hover {
+	color: #e5e5e5;
+	background-color: #db7900;
+}
+
+.content {
+	display: block;
 	padding: 10px;
 	background-color: white;
-	z-index: 500;
 }
 
 .content > p, h1 {
@@ -160,7 +204,9 @@ header {
 }
 
 .githubButton > img {
-	width: 70px;
+	width: 44px;
+	margin-top: 13px;
+	margin-left: 13px;
 }
 
 .instaButton > img {
@@ -173,10 +219,10 @@ header {
 }
 
 .redditButton > img {
-	margin-top: 10px;
-	margin-left: 10px;
-	width: 50px;
-	height: 50px;
+	margin-top: 13px;
+	margin-left: 13px;
+	width: 44px;
+	height: 44px;
 	filter: invert(1.0);
 	-webkit-filter: invert(1.0);
 }

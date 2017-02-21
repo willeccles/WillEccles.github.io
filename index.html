@@ -6,6 +6,7 @@
 		<!-- should work for most modern devices. If not, I'll fix it. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" media="screen and (max-width: 516px)" href="mobile.css"/>
+		<script src="age.js"></script>
 	</head>
 	<header>
 		<div id="avatar" class="avatar"></div>
@@ -15,17 +16,22 @@
 		</a>
 	</header>
 	<body>
-		<div id="content" class="content centered">
-			<h1>About Me</h1>
-			<p>
-				Hi! I'm Will Eccles, an 18-year-old software engineering student at Quinnipiac University from Tolland, CT. I have been programming since I was about 12 years old, when I started with BASIC. I have enjoyed programming and computer science ever since then, and over time, I have gained considerable knowledge of various programming languages and concepts. I like to write code that proves a concept, implements a theory, or just does something to prove that I can, but I also like to make software that makes life easier, whether it be for me or for others.
-			</p>
-			<p>
-				As far as operating systems are concerned, I use all of the major ones, including Windows, macOS, and Linux (preferrably Arch). I personally dislike Windows for productivity, and I mainly use it for gaming, but the others I use for any sort of productivity.
-			</p>
-			<p>
-				Even though I write a lot of code, that's not to say I don't have other hobbies! I enjoy swimming, customizing my computers (both software and hardware), shooting, and above all, mechanical keyboards. I am also open to trying new things&#151;well, except for skydiving. That's just crazy.
-			</p>
+		<!-- nav buttons should be horizontal "tabs" at the top of the content box -->
+		
+		<div id="contentContainer" class="contentContainer centered">
+			<ul class="navbar centered">
+				<li class="navItem selected"><a href="">About Me</a></li>
+				<li class="navItem"><a href="">My Portfolio</a></li>
+			</ul>
+			<div id="content" class="content centered">
+				<h1>About Me</h1>
+				<p>
+				Hi! I'm Will Eccles, <script>document.write(ageString());</script><noscript>a</noscript> software engineering student at Quinnipiac University from Tolland, CT. I have been programming since I was about 12 years old, when I started with BASIC. I have enjoyed programming and computer science ever since then, and over time, I have gained considerable knowledge of various programming languages and concepts. I like to write code that proves a concept, implements a theory, or just does something to prove that I can, but I also like to make software that makes life easier, whether it be for me or for others.
+				</p>
+				<p>
+					Even though I write a lot of code, that's not to say I don't have other hobbies! I enjoy swimming, customizing my computers (both software and hardware), shooting, and above all, mechanical keyboards. I am also open to trying new things&#151;well, except for skydiving. That's just crazy.
+				</p>
+			</div>
 		</div>
 
 		<div id="footer" class="footer">&copy; Will Eccles 2017<br/>Hand-crafted with &#10084;</div>
