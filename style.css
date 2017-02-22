@@ -17,7 +17,7 @@ header {
 	left: 0;
 	width: 100%;
 	display: block;
-	height: 80px;
+	height: 80px; /*works out to be 85px in the browser with the padding*/
 	max-height: 80px;
 	background-color: #FB8C00;
 	padding-top: 5px;
@@ -174,10 +174,15 @@ header {
 	width: 70px;
 	margin: 0;
 	top: 50%;
-	-webkit-transform: translate(20px, -50%);
-	-ms-transform: translate(20px, -50%);
-	transform: translate(20px, -50%);
 	z-index: 1000;
+}
+/*transformations when NOT on mobile*/
+@media screen and (min-width: 950px) {
+	.socialBox {
+		-webkit-transform: translate(20px, -50%);
+		-ms-transform: translate(20px, -50%);
+		transform: translate(20px, -50%);
+	}
 }
 
 .socialButton {
