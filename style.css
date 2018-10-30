@@ -106,12 +106,20 @@ body {
     border: 0px solid #D92E7F;
 }
 
+.social-button.reddit > .button-background {
+	border: 0px solid #FF4500;
+}
+
 .social-button.mail > .button-background {
 	border: 0px solid #ca2b2b;
 }
 
 .social-button.instagram > img {
 	padding: 8px;
+}
+
+.social-button.reddit > img {
+	padding: 6px;
 }
 
 .social-button.mail > img {
@@ -141,10 +149,10 @@ footer {
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.75);
 	font-family: "Raleway", sans-serif;
 	font-size: 75%;
 	padding-bottom: 5px;
-
 	bottom: 0;
+	text-shadow: 0 0 1px rgba(0,0,0,0.5);
 }
