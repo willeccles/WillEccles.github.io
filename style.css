@@ -57,7 +57,7 @@ body {
 	margin-top: 0;
 }
 
-.social-container {
+.link-container {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -65,7 +65,22 @@ body {
 	margin-right: auto;
 }
 
-.social-button {
+.link-container.standalone {
+	height: 100%;
+	margin: 0;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+	border-radius: 0;
+}
+
+.link-button {
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -79,11 +94,11 @@ body {
 	cursor: pointer;
 }
 
-.social-button:hover > img {
+.link-button:hover > img {
 	opacity: 1;
 }
 
-.social-button > img {
+.link-button > img {
 	position: absolute;
 	z-index: 75;
 	opacity: .5;
@@ -95,34 +110,42 @@ body {
 	-o-transition:all 0.25s ease;
 }
 
-.social-button.twitter > .button-background {
+.link-button.twitter > .button-background {
 	border: 0px solid #55acee;
 }
-.social-button.github > .button-background {
+.link-button.github > .button-background {
 	border: 0px solid #333;
 }
 
-.social-button.instagram > .button-background {
+.link-button.instagram > .button-background {
     border: 0px solid #D92E7F;
 }
 
-.social-button.reddit > .button-background {
+.link-button.reddit > .button-background {
 	border: 0px solid #FF4500;
 }
 
-.social-button.mail > .button-background {
+.link-button.mail > .button-background {
 	border: 0px solid #ca2b2b;
 }
 
-.social-button.instagram > img {
+.link-button.portfolio > .button-background {
+	border: 0px solid rgb(233, 198, 0);
+}
+
+.link-button.instagram > img {
 	padding: 8px;
 }
 
-.social-button.reddit > img {
+.link-button.reddit > img {
 	padding: 6px;
 }
 
-.social-button.mail > img {
+.link-button.mail > img {
+	padding: 6px;
+}
+
+.link-button.portfolio > img {
 	padding: 6px;
 }
 
@@ -141,7 +164,7 @@ body {
 	-o-transition:all 0.25s ease;
 }
 
-.social-button:hover > .button-background {
+.link-button:hover > .button-background {
 	border-width: 20px;
 }
 
@@ -155,4 +178,13 @@ footer {
 	padding-bottom: 5px;
 	bottom: 0;
 	text-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+.portfolio-container {
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+	border-radius: 4px;
+	padding: 30px;
 }
