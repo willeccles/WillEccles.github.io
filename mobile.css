@@ -2,3 +2,25 @@
 	width: 100%;
 	border-radius: 0;
 }
+
+.portfolio-container {
+	width: 100%;
+	padding-top: 84px;
+}
+
+body {
+	margin-left: 0;
+}
+
+.desktop-only { display: none !important; }
+.mobile-only { display: none !important; }
+
+.link-container.standalone {
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+}

@@ -9,14 +9,79 @@
 	</head>
 	<body>
 
-		<div class="portfolio-container">
+		<div class="portfolio-container backdrop-blur">
+			<h1 class="portfolio-header">My Portfolio</h1>
 			<div class="portfolio-item">
-				<h2>Calcpi</h2>
-				<h3>A fast and multi-threaded Pi calculator in C++.</h3>
+				<a class="portfolio-title">Calcpi</a>
+				<h3>A fast, multi-threaded Pi calculator.</h3>
+				<b>Language: </b>C++<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/Calcpi-cpp">willeccles/calcpi-cpp</a>
+				<p>
+					One of my favorite projects, calcpi is a Pi calculator implemented using a very optimized version of the Nilakantha
+					series, the fastest-converging infinite series for Pi. This project can use any number of threads your hardware can
+					support, use as many iterations as you'd like, and express the answer with any precision you'd like. This project
+					taught me most of what I know about C++11's threading, and helped to strengthen my knowledge of algorithms.
+				</p>
 			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">Treehouse Center Website</a>
+				<h3>The website for the Treehouse Center for Children and Families, LLC.</h3>
+				<b>Language: </b>HTML, CSS, JavaScript<br />
+				<b>Location:</b> <a class="portfolio-link" href="https://treehousecenter.net">treehousecenter.net</a>
+				<p>In a world so focused on the internet, it's important to have a presence on the web. For the Treehouse Center for
+					Children and Families, this came in the form of a website. They approached me a requested that I produce for them
+					a website. Using strictly HTML and CSS (no WYSIWYG, minimal Bootstrap), I produced a functional, easy-to-use website
+					for their patients and families.
+				</p>
+			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">MinePanel</a>
+				<h3>A simple-to-use but fully featured GUI for Minecraft servers.</h3>
+				<b>Language: </b>Java<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/minepanel">willeccles/minepanel</a>
+				<p>
+					Using a Minecraft server for the first time can be tricky, especially if you are not technologically advanced or if
+					you are unfamiliar with how command lines work. Luckily, MinePanel takes care of this issue for you. Not only does it
+					help you configure and run your server, but it allows you to add custom commands to your server that anyone can use.
+					The commands are written in a very simple "scripting language" of sorts that works based on Minecraft's built-in
+					commands. This project was written in my free time for no particular reason, but it was fun in any case.
+				</p>
+			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">"Wavegame"</a>
+				<h3>A game made with a group for a class.</h3>
+				<b>Language: </b>Java<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/wavegame">willeccles/wavegame</a>
+				<p>
+					In one of our software engineering classes at Quinnipiac, we were given a mostly functional (but very buggy) game
+					written in Java and were tasked with fixing, improving, and customizing it over the course of the semester. Our group
+					was very ambitious: we added more gamemodes, images, sounds, and more importantly, multiplayer. With over 450 commits
+					in one semester, we put hundreds of man-hours of work into this project, and it came out pretty nice. Wondering about
+					the name? That's the very creative name the project was given before we got it. This project taught us mainly about
+					project management and scrum, but we had a blast and went way too far with our modifications anyway.
+				</p>
+			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">Weathermaster</a>
+				<h3>A useful weather app for Android, including location-based weather.</h3>
+				<b>Language: </b>Java (using the Android SDK)<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/weathermaster">willeccles/weathermaster</a>
+				<p>
+					For our final project in an Android development class, my partner and I wrote a fully functional weather app using a
+					weather API, Google Maps for location services, and a lot of time and effort. This project took around three weeks and
+					reinforced our knowledge of the Android SDK. While it's fairly basic, a lot of work went into this app and we are
+					very proud of the final project.
+				</p>
+			</div>
+
+			<footer class="portfolio-footer">&copy; Will Eccles 2017<br />Hand-crafted with &#10084;</footer>
 		</div>
 
-		<div class="link-container standalone">
+		<div class="link-container standalone backdrop-blur">
+			<a class="link-button back" href="index.html" title="Back to Profile">
+				<div class="button-background"></div>
+				<img src="imgs/outline-arrow_back-24px.svg">
+			</a>
 			<a class="link-button github" href="https://www.github.com/willeccles" title="GitHub: willeccles">
 				<div class="button-background"></div>
 				<img src="imgs/invertocat.svg">
@@ -37,14 +102,8 @@
 				<div class="button-background"></div>
 				<img src="imgs/outline-email-24px.svg">
 			</a>
-			<a class="link-button portfolio" href="portfolio.html" title="Portfolio">
-				<div class="button-background"></div>
-				<img src="imgs/outline-folder_shared-24px.svg">
-			</a>
 		</div>
 
-		<div id="footer" class="footer">&copy; Will Eccles 2017<br/>Hand-crafted with &#10084;</div>
-		
 		<!-- retina script, which I don't need at the moment
 	  	<script type="text/javascript" src="retina.min.js"></script>-->
 		<!--google analytics script-->
