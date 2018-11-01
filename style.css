@@ -1,298 +1,256 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,200i,300,300i,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,800,600i,900');
 
-html, body {
-	height: 100%;
-	width: 100%;
+body, html {
 	margin: 0;
 	padding: 0;
-	background-color: #37474f;
-	overflow-x:hidden;
+	height: 100%;
+	overflow: hidden;
 }
 
-header {
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0;
-	right: 0;
-	left: 0;
-	width: 100%;
+body {
+	margin-left: 54px;
+	background-image: url("imgs/keebs.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* backdrop blurring effects, which are very much unsupported at the moment. */
+/* slightly transparent fallback */
+.backdrop-blur {
+	background-color: rgba(0, 0, 0, 0.671);
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(20px) saturate(180%)) or (backdrop-filter: blur(20px) saturate(180%))) {
+	.backdrop-blur {
+		background-color: rgba(0, 0, 0, .5);
+		-webkit-backdrop-filter: blur(20px) saturate(180%);
+		backdrop-filter: blur(20px) saturate(180%);
+	}
+	.link-button {
+		background-color: rgba(0,0,0,0.35) !important;
+	}
+}
+
+.center-container {
 	display: block;
-	height: 80px; /*works out to be 85px in the browser with the padding*/
-	max-height: 80px;
-	background-color: #FB8C00;
-	padding-top: 5px;
-	padding-left: 8px;
-	box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
-	z-index: 5000;
-}
-
-.headingname {
-	display: inline-block;
 	position: absolute;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	font-size: 300%;
-	top: 14.5px;
-	margin: 0;
-	margin-left: 15px;
-	color: white;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 4px;
+	padding: 30px;
 }
 
-.centered {
+.avatar {
+	background-image: url("imgs/avatar.jpg");
+	width: 124px;
+	height: 124px;
+	border-radius: 62px;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: contain;
+	border: 2px solid white;
+}
+
+.name {
+	text-align: center;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	font-weight: 800;
+	font-size: 300%;
+	margin-bottom: 0;
+	margin-top: 18px;
+}
+
+.tagline {
+	color: white;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 0;
+}
+
+.link-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.avatar {
-	display: inline-block;
-	background-image: url("avatar.jpg");
-	background-position: center;
-	background-size: cover;
-	height: 70px;
-	width: 70px;
-	border-radius: 37px; /* because with 70+the border, width is effectively 74 */
-	border: 2px solid white;
-	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
-}
-
-.emailButton {
-	display: inline-block;
-	position: absolute;
-	top: 7.5px;
-	right: 7.5px;
+.link-container.standalone {
+	height: 100%;
 	margin: 0;
-	margin-right: 7px;
-	height: 70px;
-	width: 70px;
-	background-color: #5D4037;
-	border-radius: 35px;
-}
-.emailButton:hover {
-	background-color: #795548;
-	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
-}
-.emailButton > img {
-	height: 52px;
-	width: 52px;
-	margin-top: 9px;
-	margin-left: 9px;
-	filter: invert(1.0);
-	-webkit-filter: invert(1.0);
-	opacity: 0.65;
-}
-.emailButton:hover > img {
-	opacity: 1.0;
-}
-
-.contentContainer {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 0;
-	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
-	max-width: 700px;
-	width: 700px;
-	z-index: 500;
-}
-
-.navbar {
-	display: block;
-	width: 700px;
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	font-family: 'Raleway', sans-serif;
-	font-size: 150%;
-}
-
-.navItem {
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-
-.navItem a {
-	text-align: center;
-	display: block;
-	width: 350px;
-	margin: 0;
-	padding: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: #cc7000;
-	color: #d4d2d2;
-	text-decoration: none;
-}
-
-.selected a {
-	color: white !important;
-	background-color: #FB8C00 !important; /* important so that hover doesn't override */
-}
-
-.navItem a:hover {
-	color: #e5e5e5;
-	background-color: #db7900;
-}
-
-.content {
-	display: block;
-	padding: 10px;
-	background-color: white;
-}
-
-.content > p, h1 {
-	margin: 20px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.content > h1 {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	font-size: 300%;
-}
-
-.content > hr {
-	border: 0;
-	background-color: black;
-	height: 1px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.content a {
-	color: #455A64;
-}
-.content a:visited {
-	color: #455A64;
-}
-
-.socialBox {
-	display: block;
+	flex-direction: column;
+	justify-content: flex-start;
 	position: fixed;
-	height: 310px;
-	width: 70px;
-	margin: 0;
-	top: 50%;
-	z-index: 1000;
-}
-/*transformations when NOT on mobile*/
-@media screen and (min-width: 950px) {
-	.socialBox {
-		-webkit-transform: translate(20px, -50%);
-		-ms-transform: translate(20px, -50%);
-		transform: translate(20px, -50%);
-	}
+	top: 0;
+	left: 0;
+	padding: 5px;
+	border-radius: 0;
 }
 
-.socialButton {
-	height: 70px;
-	width: 70px;
-	background-color: #455A64;
-	border-radius: 35px;
-	padding: 0;
+.link-button {
 	display: block;
-	margin-bottom: 15px;
-}
-
-.socialButton:hover {
-	background-color: #546E7A;
-	box-shadow: rgba(0, 0, 0, 0.258824) 0px 0px 5px 0px;
-}
-
-.socialButton > img {
-	opacity: 0.65;
-}
-
-.socialButton:hover > img {
-	opacity: 1.0;
-}
-
-.twitterButton > img {
-	height: 64px;
-	width: 64px;
-	margin-left: 3px;
-	margin-top: 3px;
-}
-
-.githubButton > img {
-	width: 44px;
-	margin-top: 13px;
-	margin-left: 13px;
-}
-
-.instaButton > img {
 	width: 40px;
 	height: 40px;
-	filter: invert(1.0);
-	-webkit-filter: invert(1.0);
-	margin-top: 15px;
-	margin-left: 15px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.75);
+	margin: 2px;
+	transition:all 1.000s ease;
+	-webkit-transition:all 1.000s ease;
+	-moz-transition:all 1.000s ease;
+	-o-transition:all 1.000s ease;
+	cursor: pointer;
 }
 
-.redditButton > img {
-	margin-top: 13px;
-	margin-left: 13px;
-	width: 44px;
-	height: 44px;
-	filter: invert(1.0);
-	-webkit-filter: invert(1.0);
+.link-button:hover > img {
+	opacity: 1;
 }
 
-.footer {
+.link-button > img {
+	position: absolute;
+	z-index: 75;
+	opacity: .5;
+	height: 40px;
+	width: 40px;
+	transition:all 0.25s ease;
+	-webkit-transition:all 0.25s ease;
+	-moz-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+}
+
+.link-button.twitter > .button-background {
+	border: 0px solid #55acee;
+}
+.link-button.github > .button-background {
+	border: 0px solid #333;
+}
+
+.link-button.instagram > .button-background {
+    border: 0px solid #D92E7F;
+}
+
+.link-button.reddit > .button-background {
+	border: 0px solid #FF4500;
+}
+
+.link-button.mail > .button-background {
+	border: 0px solid #ca2b2b;
+}
+
+.link-button.portfolio > .button-background {
+	border: 0px solid rgb(233, 198, 0);
+}
+
+.link-button.back > .button-background {
+	border: 0px solid rgb(233, 198, 0);
+}
+
+.link-button.instagram > img {
+	padding: 8px;
+}
+
+.link-button.reddit > img {
+	padding: 6px;
+}
+
+.link-button.mail > img {
+	padding: 6px;
+}
+
+.link-button.portfolio > img {
+	padding: 6px;
+}
+
+.link-button.back > img {
+	padding: 4px;
+}
+
+.button-background {
+	z-index: 50;
+	position: absolute;
+	display: block;
+	height: 40px;
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	transition:all 0.25s ease;
+	-webkit-transition:all 0.25s ease;
+	-moz-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+}
+
+.link-button:hover > .button-background {
+	border-width: 20px;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
 	text-align: center;
-	width: auto;
-	height: auto;
-	display: block;
-	color: #455A64;
-	margin-top: -5px;
-	margin-bottom: 20px;
-	font-family: 'Open Sans', sans-serif;
+	color: rgba(255, 255, 255, 0.75);
+	font-family: "Raleway", sans-serif;
 	font-size: 75%;
+	padding-bottom: 5px;
+	bottom: 0;
+	text-shadow: 0 0 1px rgba(0,0,0,0.5);
 }
 
-/* Portfolio stuff (see portfolio.html) */
+footer.portfolio-footer {
+	position: static;
+	width: 100%;
+	height: 40px;
+}
 
-.portfolioItem {
+.portfolio-header {
+	font-weight: 900;
+	font-size: 40px;
+	margin-top: 0;
+	text-align: center;
+}
+
+.portfolio-container {
+	max-width: 1040px;
 	display: block;
-	margin: 20px;
-	font-family: 'Open Sans', sans-serif;
-	margin-left: 15px;
-	margin-right: 15px;
-	background-color: rgba(0, 0, 0, 0.05);
-	padding-bottom: 10px;
+	overflow-y: scroll;
+	padding: 30px;
+	padding-bottom: 0;
+	width: 75%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-family: "Raleway", sans-serif;
 }
 
-/* this will be more of a bar at the top of the item */
-.portfolioItem h2 {
-	padding: 2px;
-	background-color: #5D4037;
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	padding-left: 10px;
+.portfolio-title {
+	font-weight: 800;
+	font-size: 30px;
+	margin: 0;
 	margin-bottom: 5px;
 }
 
-.portfolioItem h2 > a {
-	text-decoration: none;
+.portfolio-item > h3 {
+	margin: 0;
+	margin-bottom: 5px;
+	font-weight: 600;
+	font-style: italic;
 }
-.portfolioItem h2 > a:visited {
+
+.portfolio-link {
 	color: white;
 }
 
-.portfolioItem b {
-	color: #5D4037;
-	padding-left: 15px;
-}
-
-/* every <a> preceded by a <b> */
-.portfolioItem b ~ a {
-	color: #455A64 !important; /* !important keeps :visited from changing it */
-}
-
-/* these are used for descriptions */
-.portfolioItem p {
-	padding-left: 40px;
-	margin: 0;
-	padding-right: 15px;
+.portfolio-item > p {
+	margin-top: 5px;
 }

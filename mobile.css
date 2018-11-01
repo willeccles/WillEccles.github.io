@@ -1,149 +1,26 @@
-header {
-	height: 50px;
-}
-
-.headingname {
-	font-size: 150%; /*height of ~29px*/
-	top: 13px;
-	margin-left: 10px;
-}
-
-.avatar {
-	height: 40px;
-	width: 40px;
-	border-radius: 22px;
-}
-
-.emailButton {
-	height: 40px;
-	width: 40px;
-}
-
-.emailButton > img {
-	height: 32px;
-	width: 32px;
-	margin-top: 4px;
-	margin-left: 4px;
-}
-
-.contentContainer {
-	min-width: 100%;
+.center-container {
 	width: 100%;
-	margin-bottom: 20px;
-	margin-top: 0 !important;
+	border-radius: 0;
 }
 
-.navbar {
-	width: 100% !important;
-}
-
-.navItem {
-	width: 50%;
-}
-
-.navItem a {
+.portfolio-container {
 	width: 100%;
+	padding-top: 84px;
 }
 
-@media screen and (max-width: 375px) {
-	.navbar {
-		width: !important;
-	}
-	.navItem {
-		float: none !important;
-		width: auto;
-	}
-	.navItem a {
-		width: 100%;
-	}
+body {
+	margin-left: 0;
 }
 
-.content > h1 {
-	font-size: 200%;
-	margin: 10px;
-}
+.desktop-only { display: none !important; }
+.mobile-only { display: none !important; }
 
-.socialBox {
-	/*220px is the total width of the buttons*/
-	background-color: rgba(0,0,0,0);
-	position: relative;
-	width: 220px;
-	height: 40px;
-	top: auto;
-	bottom: 10px;
-	left: Calc((100% - 230px) / 2);
-	z-index: 5001;
-}
-
-.socialButton {
-	display: inline-block;
-	border-radius: 25px;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(0,0,0,0);
-	box-shadow: none;
-	margin: 0;
-	padding: 0;
-}
-
-.socialButton > img {
-	opacity: 1.0;
-}
-
-.twitterButton {
-	background-color: #1DA1F2;
-	position: absolute;
-	bottom: 0;
-}
-
-.githubButton {
-	position: absolute;
-	background-color: black;
-	left: 60px;
-	bottom: 0;
-}
-
-.instaButton {
-	position: absolute;
-	background-color: #eb4b59;
-	left: 120px;
-	bottom: 0;
-}
-
-.redditButton {
-	background-color: #fc471e;
-	position: absolute;
-	left: 180px;
-	bottom: 0;
-}
-
-.twitterButton > img {
-	margin-top: 3px;
-	margin-left: 3px;
-	height: 34px;
-	width: 34px;
-}
-
-.githubButton > img {
-	width: 30px;
-	margin-top: 5px;
-	margin-left: 5px;
-}
-
-.instaButton > img {
-	width: 24px;
-	height: 24px;
-	margin-left: 8px;
-	margin-top: 8px;
-}
-
-.redditButton > img {
-	height: 24px;
-	width: 24px;
-	margin-top: 8px;
-	margin-left: 8px;
-}
-
-.footer {
-	display: none;
+.link-container.standalone {
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: auto;
 }

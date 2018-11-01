@@ -1,88 +1,109 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Will Eccles</title>
+		<title>Will Eccles - Portfolio</title>
 		<link rel="stylesheet" href="style.css"/>
 		<!-- should work for most modern devices. If not, I'll fix it. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" media="screen and (max-width: 950px)" href="mobile.css"/>
 	</head>
-	<header>
-		<div id="avatar" class="avatar"></div>
-		<h1 class="headingname">Will Eccles</h1>
-		<a id="emailButton" class="emailButton" href="mailto:willeccles860@gmail.com">
-			<img src="imgs/email_icon.svg"/>
-		</a>
-	</header>
 	<body>
-		<!-- nav buttons should be horizontal "tabs" at the top of the content box -->
-		
-		<div id="contentContainer" class="contentContainer centered">
-			<ul class="navbar centered">
-				<li class="navItem"><a href="index.html">About Me</a></li>
-				<li class="navItem selected"><a>My Portfolio</a></li>
-			</ul>
-			<div id="content" class="content centered">
-				<h1>My Portfolio</h1>
-				<p>This list is just what I would consider my most impressive or important works, not necessarily all of them. Much more can be found on <a href="https://www.github.com/willeccles">my github</a>.</p>
-				<div name="calcpi" id="calcpi" class="portfolioItem">
-					<h2>Calcpi</h2>
-					<b>Platform: </b>Any<br/>
-					<b>Language: </b>C++<br/>
-					<b>Status: </b>Finished<br/>
-					<b>Repo: </b><a href="https://github.com/willeccles/calcpi-cpp">willeccles/calcpi-cpp</a><br/>
-					<b>Description: </b>
-					<p>Calcpi is a C++ program which "calculates" Pi using the Nilakantha Series. It has the capability to use as many threads as the user specifies, and can display a specific number of decimal places. This is one of my favorite programs I have ever written, since it incorporates a lot of features I really enjoy and topics that I find fascinating.</p>
-				</div>
-				<div name="startpage" id="startpage" class="portfolioItem">
-					<h2>Startpage</h2>
-					<b>Platform: </b>Web<br/>
-					<b>Link: </b><a href="http://willeccles.me/startpage">startpage</a><br/>
-					<b>Language: </b>HTML, JavaScript, CSS<br/>
-					<b>Status: </b>Finished<br/>
-					<b>Repo: </b><a href="https://github.com/willeccles/startpage">willeccles/startpage</a><br/>
-					<b>Description: </b>
-					<p>My custom browser startpage. In other words, it's the page that shows up when I open a new browser window or tab. It's got a very simple, easy-to-use interface with a very clean look. The search box works as a URL entry box, command line (with a bunch of useful commands and shortcuts), and of course, a search box.</p>
-				</div>
-				<div name="node-server" id="node-server" class="portfolioItem">
-					<h2>Node-server</h2>
-					<b>Platform: </b>Any<br/>
-					<b>Language: </b>JavaScript (Node.js)<br/>
-					<b>Status: </b>Finished<br/>
-					<b>Repo: </b><a href="https://github.com/willeccles/node-server">willeccles/node-server</a><br/>
-					<b>Description: </b>
-					<p>Node-server was a project that I made just to figure out Node.js and whether or not I liked it. In short, it's a basic file server, and has everything a basic file server needs: an easy-to-use config, simple file structure, HTTPS support, and customizability. I don't use it that much, but the times that I have used it, it worked pretty well and I was overall satisfied with how it worked. I would call this "finished," as the status above implies, but I am not actually certain that is the case. I may come back to this one one day.</p>
-				</div>
-				<div name="minepanel" id="minepanel" class="portfolioItem">
-					<h2>MinePanel</h2>
-					<b>Platform: </b>Any<br/>
-					<b>Language: </b>Java<br/>
-					<b>Status: </b>Unfinished<br/>
-					<b>Repo: </b><a href="https://github.com/willeccles/minepanel">willeccles/minepanel</a><br/>
-					<b>Description: </b>
-					<p>As one of my oldest projects, from sophomore year of high school, MinePanel my first "real" programming project, meaning the first one that was big, multifaceted, and complicated. It was meant as a simple way to run your Minecraft server without having to know how to use the command line, edit your config files, or anything else like that. It did all that for you, including showing the output of the server executable, allowing you to enter commands, and so on. It even allowed for custom commands, in a very limited fashion. I never finished it, as I moved on to more interesting things (and stopped playing Minecraft).</p>
-				</div>
+
+		<div class="portfolio-container backdrop-blur">
+			<h1 class="portfolio-header">My Portfolio</h1>
+			<div class="portfolio-item">
+				<a class="portfolio-title">Calcpi</a>
+				<h3>A fast, multi-threaded Pi calculator.</h3>
+				<b>Language: </b>C++<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/Calcpi-cpp">willeccles/calcpi-cpp</a>
+				<p>
+					One of my favorite projects, calcpi is a Pi calculator implemented using a very optimized version of the Nilakantha
+					series, the fastest-converging infinite series for Pi. This project can use any number of threads your hardware can
+					support, use as many iterations as you'd like, and express the answer with any precision you'd like. This project
+					taught me most of what I know about C++11's threading, and helped to strengthen my knowledge of algorithms.
+				</p>
 			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">Treehouse Center Website</a>
+				<h3>The website for the Treehouse Center for Children and Families, LLC.</h3>
+				<b>Language: </b>HTML, CSS, JavaScript<br />
+				<b>Location:</b> <a class="portfolio-link" href="https://treehousecenter.net">treehousecenter.net</a>
+				<p>In a world so focused on the internet, it's important to have a presence on the web. For the Treehouse Center for
+					Children and Families, this came in the form of a website. They approached me a requested that I produce for them
+					a website. Using strictly HTML and CSS (no WYSIWYG, minimal Bootstrap), I produced a functional, easy-to-use website
+					for their patients and families.
+				</p>
+			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">MinePanel</a>
+				<h3>A simple-to-use but fully featured GUI for Minecraft servers.</h3>
+				<b>Language: </b>Java<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/minepanel">willeccles/minepanel</a>
+				<p>
+					Using a Minecraft server for the first time can be tricky, especially if you are not technologically advanced or if
+					you are unfamiliar with how command lines work. Luckily, MinePanel takes care of this issue for you. Not only does it
+					help you configure and run your server, but it allows you to add custom commands to your server that anyone can use.
+					The commands are written in a very simple "scripting language" of sorts that works based on Minecraft's built-in
+					commands. This project was written in my free time for no particular reason, but it was fun in any case.
+				</p>
+			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">"Wavegame"</a>
+				<h3>A game made with a group for a class.</h3>
+				<b>Language: </b>Java<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/wavegame">willeccles/wavegame</a>
+				<p>
+					In one of our software engineering classes at Quinnipiac, we were given a mostly functional (but very buggy) game
+					written in Java and were tasked with fixing, improving, and customizing it over the course of the semester. Our group
+					was very ambitious: we added more gamemodes, images, sounds, and more importantly, multiplayer. With over 450 commits
+					in one semester, we put hundreds of man-hours of work into this project, and it came out pretty nice. Wondering about
+					the name? That's the very creative name the project was given before we got it. This project taught us mainly about
+					project management and scrum, but we had a blast and went way too far with our modifications anyway.
+				</p>
+			</div>
+			<div class="portfolio-item">
+				<a class="portfolio-title">Weathermaster</a>
+				<h3>A useful weather app for Android, including location-based weather.</h3>
+				<b>Language: </b>Java (using the Android SDK)<br />
+				<b>Repository:</b> <a class="portfolio-link" href="https://github.com/willeccles/weathermaster">willeccles/weathermaster</a>
+				<p>
+					For our final project in an Android development class, my partner and I wrote a fully functional weather app using a
+					weather API, Google Maps for location services, and a lot of time and effort. This project took around three weeks and
+					reinforced our knowledge of the Android SDK. While it's fairly basic, a lot of work went into this app and we are
+					very proud of the final project.
+				</p>
+			</div>
+
+			<footer class="portfolio-footer">&copy; Will Eccles 2017<br />Hand-crafted with &#10084;</footer>
 		</div>
 
-		<div id="footer" class="footer">&copy; Will Eccles 2017<br/>Hand-crafted with &#10084;</div>
-
-		<div id="socialbuttons" class="socialBox">
-			<a id="twitterButton" class="socialButton twitterButton" href="https://www.twitter.com/will_eccles">
-				<img src="imgs/twitter_logo.svg"/>
+		<div class="link-container standalone backdrop-blur">
+			<a class="link-button back" href="index.html" title="Back to Profile">
+				<div class="button-background"></div>
+				<img src="imgs/outline-arrow_back-24px.svg">
 			</a>
-			<!-- TODO: replace with octocat, not invertocat -->
-			<a id="githubButton" class="socialButton githubButton" href="https://github.com/willeccles">
-				<img src="imgs/invertocat.svg"/>
+			<a class="link-button github" href="https://www.github.com/willeccles" title="GitHub: willeccles">
+				<div class="button-background"></div>
+				<img src="imgs/invertocat.svg">
 			</a>
-			<a id="instaButton" class="socialButton instaButton" href="https://instagram.com/willeccles">
-				<img src="imgs/insta_logo.png"/>
+			<a class="link-button twitter" href="https://www.twitter.com/will_eccles" title="Twitter: @will_eccles">
+				<div class="button-background"></div>
+				<img src="imgs/twitter_logo.svg">
 			</a>
-			<a id="redditButton" class="socialButton redditButton" href="http://reddit.com/u/will_eccles">
-				<img src="imgs/reddit_logo.svg"/>
+			<a class="link-button instagram" href="https://www.instagram.com/willeccles" title="Instagram: @willeccles">
+				<div class="button-background"></div>
+				<img src="imgs/insta_logo.png">
+			</a>
+			<a class="link-button reddit" href="https://www.reddit.com/u/will_eccles" title="Reddit: u/will_eccles">
+				<div class="button-background"></div>
+				<img src="imgs/reddit_logo.svg">
+			</a>
+			<a class="link-button mail" href="mailto:willeccles860@gmail.com" title="Send me an email">
+				<div class="button-background"></div>
+				<img src="imgs/outline-email-24px.svg">
 			</a>
 		</div>
-		
+
 		<!-- retina script, which I don't need at the moment
 	  	<script type="text/javascript" src="retina.min.js"></script>-->
 		<!--google analytics script-->

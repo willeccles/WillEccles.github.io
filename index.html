@@ -2,55 +2,46 @@
 <html>
 	<head>
 		<title>Will Eccles</title>
-		<link rel="stylesheet" href="style.css"/>
 		<!-- should work for most modern devices. If not, I'll fix it. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" media="screen and (max-width: 950px)" href="mobile.css"/>
-		<script src="age.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" media="screen and (max-width: 645px)" href="mobile.css" />
 	</head>
-	<header>
-		<div id="avatar" class="avatar"></div>
-		<h1 class="headingname">Will Eccles</h1>
-		<a id="emailButton" class="emailButton" href="mailto:willeccles860@gmail.com">
-			<img src="imgs/email_icon.svg"/>
-		</a>
-	</header>
 	<body>
-		<!-- nav buttons should be horizontal "tabs" at the top of the content box -->
 		
-		<div id="contentContainer" class="contentContainer centered">
-			<ul class="navbar centered">
-				<li class="navItem selected"><a>About Me</a></li>
-				<li class="navItem"><a href="portfolio.html">My Portfolio</a></li>
-			</ul>
-			<div id="content" class="content centered">
-				<h1>About Me</h1>
-				<p>
-				Hi! I'm Will Eccles, <script>document.write(ageString());</script><noscript>a</noscript> software engineering student at Quinnipiac University from Tolland, CT. I have been programming since I was about 12 years old, when I started with BASIC. I have enjoyed programming and computer science ever since then, and over time, I have gained considerable knowledge of various programming languages and concepts. I like to write code that proves a concept, implements a theory, or just does something to prove that I can, but I also like to make software that makes life easier, whether it be for me or for others.
-				</p>
-				<p>
-					Even though I write a lot of code, that's not to say I don't have other hobbies! I enjoy swimming, customizing my computers (both software and hardware), shooting, and above all, mechanical keyboards. I am also open to trying new things&#151;well, except for skydiving. That's just crazy.
-				</p>
+		<div class="center-container backdrop-blur">
+			<div class="avatar"></div>
+			<h1 class="name">Will Eccles</h1>
+			<h3 class="tagline">Software Engineer</h3>
+			<div class="link-container">
+				<a class="link-button github" href="https://www.github.com/willeccles" title="GitHub: willeccles">
+					<div class="button-background"></div>
+					<img src="imgs/invertocat.svg">
+				</a>
+				<a class="link-button twitter" href="https://www.twitter.com/will_eccles" title="Twitter: @will_eccles">
+					<div class="button-background"></div>
+					<img src="imgs/twitter_logo.svg">
+				</a>
+				<a class="link-button instagram" href="https://www.instagram.com/willeccles" title="Instagram: @willeccles">
+					<div class="button-background"></div>
+					<img src="imgs/insta_logo.png">
+				</a>
+				<a class="link-button reddit" href="https://www.reddit.com/u/will_eccles" title="Reddit: u/will_eccles">
+					<div class="button-background"></div>
+					<img src="imgs/reddit_logo.svg">
+				</a>
+				<a class="link-button mail" href="mailto:willeccles860@gmail.com" title="Send me an email">
+					<div class="button-background"></div>
+					<img src="imgs/outline-email-24px.svg">
+				</a>
+				<a class="link-button portfolio" href="portfolio.html" title="Portfolio">
+					<div class="button-background"></div>
+					<img src="imgs/outline-folder_shared-24px.svg">
+				</a>
 			</div>
 		</div>
 
-		<div id="footer" class="footer">&copy; Will Eccles 2017<br/>Hand-crafted with &#10084;</div>
-
-		<div id="socialbuttons" class="socialBox">
-			<a id="twitterButton" class="socialButton twitterButton" href="https://www.twitter.com/will_eccles">
-				<img src="imgs/twitter_logo.svg"/>
-			</a>
-			<!-- TODO: replace with octocat, not invertocat -->
-			<a id="githubButton" class="socialButton githubButton" href="https://github.com/willeccles">
-				<img src="imgs/invertocat.svg"/>
-			</a>
-			<a id="instaButton" class="socialButton instaButton" href="https://instagram.com/willeccles">
-				<img src="imgs/insta_logo.png"/>
-			</a>
-			<a id="redditButton" class="socialButton redditButton" href="http://reddit.com/u/will_eccles">
-				<img src="imgs/reddit_logo.svg"/>
-			</a>
-		</div>
+		<footer>&copy; Will Eccles 2018<br />Hand-crafted with &#10084;</footer>
 		
 		<!--google analytics script-->
 		<script>
