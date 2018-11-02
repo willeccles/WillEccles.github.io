@@ -9,7 +9,7 @@
 }
 
 body {
-	margin-left: 0;
+	margin-left: 0 !important;
 }
 
 .desktop-only { display: none !important; }

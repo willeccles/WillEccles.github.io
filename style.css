@@ -8,7 +8,7 @@ body, html {
 }
 
 body {
-	margin-left: 54px;
+	margin-left: 54px !important;
 	background-image: url("imgs/keebs.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -105,10 +105,6 @@ body {
 	border-radius: 50%;
 	background-color: rgba(0,0,0,0.75);
 	margin: 2px;
-	transition:all 1.000s ease;
-	-webkit-transition:all 1.000s ease;
-	-moz-transition:all 1.000s ease;
-	-o-transition:all 1.000s ease;
 	cursor: pointer;
 }
 
@@ -122,10 +118,10 @@ body {
 	opacity: .5;
 	height: 40px;
 	width: 40px;
-	transition:all 0.25s ease;
-	-webkit-transition:all 0.25s ease;
-	-moz-transition:all 0.25s ease;
-	-o-transition:all 0.25s ease;
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
 }
 
 .link-button.twitter > .button-background {
@@ -148,11 +144,15 @@ body {
 }
 
 .link-button.portfolio > .button-background {
-	border: 0px solid rgb(233, 198, 0);
+	border: 0px solid rgb(148, 0, 233);
 }
 
 .link-button.back > .button-background {
-	border: 0px solid rgb(233, 198, 0);
+	border: 0px solid rgb(148, 0, 233);
+}
+
+.link-button.linkedin > .button-background {
+	border: 0px solid #0077B5;
 }
 
 .link-button.instagram > img {
@@ -173,6 +173,10 @@ body {
 
 .link-button.back > img {
 	padding: 4px;
+}
+
+.link-button.linkedin > img {
+	padding: 9px;
 }
 
 .button-background {
@@ -245,6 +249,7 @@ footer.portfolio-footer {
 	margin-bottom: 5px;
 	font-weight: 600;
 	font-style: italic;
+	font-size: 1.25rem;
 }
 
 .portfolio-link {
@@ -253,4 +258,9 @@ footer.portfolio-footer {
 
 .portfolio-item > p {
 	margin-top: 5px;
+}
+
+.portfolio-link:hover {
+	text-decoration: underline;
+	color: white;
 }
