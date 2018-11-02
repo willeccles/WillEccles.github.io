@@ -4,6 +4,8 @@
 		<title>Will Eccles</title>
 		<!-- should work for most modern devices. If not, I'll fix it. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" media="screen and (max-width: 645px)" href="mobile.css" />
 	</head>
@@ -14,27 +16,38 @@
 			<h1 class="name">Will Eccles</h1>
 			<h3 class="tagline">Software Engineer</h3>
 			<div class="link-container">
-				<a class="link-button github" href="https://www.github.com/willeccles" title="GitHub: willeccles">
+				<a class="link-button github" href="https://www.github.com/willeccles"
+					data-toggle="tooltip" data-placement="bottom" title="GitHub">
 					<div class="button-background"></div>
 					<img src="imgs/invertocat.svg">
 				</a>
-				<a class="link-button twitter" href="https://www.twitter.com/will_eccles" title="Twitter: @will_eccles">
+				<a class="link-button linkedin" href="https://www.linkedin.com/in/will-eccles/"
+					data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
+					<div class="button-background"></div>
+					<img src="imgs/linkedin48px.png">
+				</a>
+				<a class="link-button twitter" href="https://www.twitter.com/will_eccles"
+					data-toggle="tooltip" data-placement="bottom" title="Twitter">
 					<div class="button-background"></div>
 					<img src="imgs/twitter_logo.svg">
 				</a>
-				<a class="link-button instagram" href="https://www.instagram.com/willeccles" title="Instagram: @willeccles">
+				<a class="link-button instagram" href="https://www.instagram.com/willeccles"
+					data-toggle="tooltip" data-placement="bottom" title="Instagram">
 					<div class="button-background"></div>
 					<img src="imgs/insta_logo.png">
 				</a>
-				<a class="link-button reddit" href="https://www.reddit.com/u/will_eccles" title="Reddit: u/will_eccles">
+				<a class="link-button reddit" href="https://www.reddit.com/u/will_eccles"
+					data-toggle="tooltip" data-placement="bottom" title="Reddit">
 					<div class="button-background"></div>
 					<img src="imgs/reddit_logo.svg">
 				</a>
-				<a class="link-button mail" href="mailto:willeccles860@gmail.com" title="Send me an email">
+				<a class="link-button mail" href="mailto:willeccles860@gmail.com"
+					data-toggle="tooltip" data-placement="bottom" title="Email">
 					<div class="button-background"></div>
 					<img src="imgs/outline-email-24px.svg">
 				</a>
-				<a class="link-button portfolio" href="portfolio.html" title="Portfolio">
+				<a class="link-button portfolio" href="portfolio.html"
+					data-toggle="tooltip" data-placement="bottom" title="Portfolio">
 					<div class="button-background"></div>
 					<img src="imgs/outline-folder_shared-24px.svg">
 				</a>
@@ -54,5 +67,17 @@
 			ga('require', 'linkid');
 			ga('send', 'pageview');
 		</script>
+
+		<!-- This is overkill but I don't feel like manually implementing popper.js. -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+
+		 <script type="text/JavaScript">
+		 $(function () { $('[data-toggle="tooltip"]').tooltip(); });
+		 </script>
 	</body>
 </html>
