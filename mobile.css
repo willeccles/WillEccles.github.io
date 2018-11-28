@@ -24,3 +24,7 @@ body {
 	right: 0;
 	height: auto;
 }
+
+.tooltip {
+	display: none !important;
+}

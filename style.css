@@ -8,11 +8,14 @@ body, html {
 }
 
 body {
-	margin-left: 54px !important;
-	background-image: url("imgs/keebs.png");
+	background-image: url("imgs/keebs.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
+}
+
+body.portfolio-body {
+	margin-left: 54px;
 }
 
 * {
@@ -108,75 +111,57 @@ body {
 	cursor: pointer;
 }
 
-.link-button:hover > img {
-	opacity: 1;
-}
-
-.link-button > img {
+.link-button > i {
+	display: table-cell;
 	position: absolute;
-	z-index: 75;
-	opacity: .5;
-	height: 40px;
+	color: white;
+	font-size: 26px;
+	line-height: 26px;
+	text-align: center;
 	width: 40px;
+	height: 26px;
+	margin-top: 7px;
+	opacity: .5;
+	z-index: 75;
 	transition:all 0.3s ease;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
 }
 
+.link-button:hover > i {
+	opacity: 1;
+}
+
 .link-button.twitter > .button-background {
-	border: 0px solid #55acee;
+	border-color: #55acee;
 }
 .link-button.github > .button-background {
-	border: 0px solid #333;
+	border-color: #333;
 }
 
 .link-button.instagram > .button-background {
-    border: 0px solid #D92E7F;
+    border-color: #D92E7F;
 }
 
 .link-button.reddit > .button-background {
-	border: 0px solid #FF4500;
+	border-color: #FF4500;
 }
 
 .link-button.mail > .button-background {
-	border: 0px solid #ca2b2b;
+	border-color: #ca2b2b;
 }
 
 .link-button.portfolio > .button-background {
-	border: 0px solid rgb(148, 0, 233);
+	border-color: rgb(148, 0, 233);
 }
 
 .link-button.back > .button-background {
-	border: 0px solid rgb(148, 0, 233);
+	border-color: rgb(148, 0, 233);
 }
 
 .link-button.linkedin > .button-background {
-	border: 0px solid #0077B5;
-}
-
-.link-button.instagram > img {
-	padding: 8px;
-}
-
-.link-button.reddit > img {
-	padding: 6px;
-}
-
-.link-button.mail > img {
-	padding: 6px;
-}
-
-.link-button.portfolio > img {
-	padding: 6px;
-}
-
-.link-button.back > img {
-	padding: 4px;
-}
-
-.link-button.linkedin > img {
-	padding: 9px;
+	border-color: #0077B5;
 }
 
 .button-background {
@@ -185,6 +170,8 @@ body {
 	display: block;
 	height: 40px;
 	width: 40px;
+	border-style: solid;
+	border-width: 0px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 50%;
