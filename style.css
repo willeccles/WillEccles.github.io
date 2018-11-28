@@ -251,3 +251,18 @@ footer.portfolio-footer {
 	text-decoration: underline;
 	color: white;
 }
+
+/* Hide the scrollbar on the portfolio box */
+.portfolio-container {
+	-ms-scrollbar-base-color: transparent !important;
+	-ms-scrollbar-face-color: transparent !important;
+	-ms-scrollbar-highlight-color: transparent !important;
+	-ms-scrollbar-3dlight-color: transparent !important;
+	-ms-scrollbar-shadow-color: transparent !important;
+	-ms-scrollbar-darkshadow-color: transparent !important;
+	-ms-scrollbar-base-color: transparent !important;
+	-ms-scrollbar-track-color: transparent !important;
+}
+.portfolio-container::-webkit-scrollbar {
+	display: none;
+}
