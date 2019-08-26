@@ -1,268 +1,94 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,800,600i,900');
+/* Use this temporarily to see where items are */
+.temp-border {
+    border: 2px solid #808074;
+}
 
-body, html {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	overflow: hidden;
+html {
+    background-color: #262626;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 body {
-	background-image: url("imgs/keebs.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
+    background-color: #262626;
+    color: #808074;
+    font-family: monospace;
+    font-size: 100%;
 }
 
-body.portfolio-body {
-	margin-left: 54px;
+legend {
+    color: #808074;
 }
 
-* {
-	box-sizing: border-box;
+fieldset {
+    border: 2px solid #808074;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin: 5px;
+    padding: 5px;
 }
 
-/* backdrop blurring effects, which are very much unsupported at the moment. */
-/* slightly transparent fallback */
-.backdrop-blur {
-	background-color: rgba(0, 0, 0, 0.671);
+h1 {
+    margin: 0;
+    text-align: center;
 }
 
-/* if backdrop support: very transparent and blurred */
-@supports ((-webkit-backdrop-filter: blur(20px) saturate(180%)) or (backdrop-filter: blur(20px) saturate(180%))) {
-	.backdrop-blur {
-		background-color: rgba(0, 0, 0, .5);
-		-webkit-backdrop-filter: blur(20px) saturate(180%);
-		backdrop-filter: blur(20px) saturate(180%);
-	}
-	.link-button {
-		background-color: rgba(0,0,0,0.35) !important;
-	}
+a {
+    color: #808074;
+    text-decoration: none;
 }
 
-.center-container {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	border-radius: 4px;
-	padding: 30px;
+a:visited {
+    color: #808074;
+    text-decoration: none;
 }
 
-.avatar {
-	background-image: url("imgs/avatar.jpg");
-	width: 124px;
-	height: 124px;
-	border-radius: 62px;
-	margin-left: auto;
-	margin-right: auto;
-	background-size: contain;
-	border: 2px solid white;
+a:hover {
+    color: orange; /* TODO: make this not ugly */
 }
 
-.name {
-	text-align: center;
-	color: white;
-	font-family: "Raleway", sans-serif;
-	font-weight: 800;
-	font-size: 300%;
-	margin-bottom: 0;
-	margin-top: 18px;
+/* General */
+
+.main-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-.tagline {
-	color: white;
-	font-family: "Raleway", sans-serif;
-	text-align: center;
-	font-weight: 500;
-	margin-top: 0;
+
+/* Info box */
+
+.info-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0; /* don't let this column grow */
+    justify-content: center;
+    padding: 5px;
 }
 
-.link-container {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	margin-left: auto;
-	margin-right: auto;
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.link-container.standalone {
-	height: 100%;
-	margin: 0;
-	flex-direction: column;
-	justify-content: flex-start;
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding: 5px;
-	border-radius: 0;
+.twitter-link > a:hover {
+    color: rgb(29, 161, 242);
 }
 
-.link-button {
-	display: block;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: rgba(0,0,0,0.75);
-	margin: 2px;
-	cursor: pointer;
-}
+/* Page content */
 
-.link-button > i {
-	display: table-cell;
-	position: absolute;
-	color: white;
-	font-size: 26px;
-	line-height: 26px;
-	text-align: center;
-	width: 40px;
-	height: 26px;
-	margin-top: 7px;
-	opacity: .5;
-	z-index: 75;
-	transition:all 0.3s ease;
-	-webkit-transition:all 0.3s ease;
-	-moz-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;
-}
-
-.link-button:hover > i {
-	opacity: 1;
-}
-
-.link-button.twitter > .button-background {
-	border-color: #55acee;
-}
-.link-button.github > .button-background {
-	border-color: #333;
-}
-
-.link-button.instagram > .button-background {
-    border-color: #D92E7F;
-}
-
-.link-button.reddit > .button-background {
-	border-color: #FF4500;
-}
-
-.link-button.mail > .button-background {
-	border-color: #ca2b2b;
-}
-
-.link-button.portfolio > .button-background {
-	border-color: rgb(148, 0, 233);
-}
-
-.link-button.back > .button-background {
-	border-color: rgb(148, 0, 233);
-}
-
-.link-button.linkedin > .button-background {
-	border-color: #0077B5;
-}
-
-.button-background {
-	z-index: 50;
-	position: absolute;
-	display: block;
-	height: 40px;
-	width: 40px;
-	border-style: solid;
-	border-width: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 50%;
-	transition:all 0.25s ease;
-	-webkit-transition:all 0.25s ease;
-	-moz-transition:all 0.25s ease;
-	-o-transition:all 0.25s ease;
-}
-
-.link-button:hover > .button-background {
-	border-width: 20px;
-}
-
-footer {
-	position: fixed;
-	width: 100%;
-	text-align: center;
-	color: rgba(255, 255, 255, 0.75);
-	font-family: "Raleway", sans-serif;
-	font-size: 75%;
-	padding-bottom: 5px;
-	bottom: 0;
-	text-shadow: 0 0 1px rgba(0,0,0,0.5);
-}
-
-footer.portfolio-footer {
-	position: static;
-	width: 100%;
-	height: 40px;
-}
-
-.portfolio-header {
-	font-weight: 900;
-	font-size: 40px;
-	margin-top: 0;
-	text-align: center;
-}
-
-.portfolio-container {
-	max-width: 1040px;
-	display: block;
-	overflow-y: scroll;
-	padding: 30px;
-	padding-bottom: 0;
-	width: 75%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	color: white;
-	font-family: "Raleway", sans-serif;
-}
-
-.portfolio-title {
-	font-weight: 800;
-	font-size: 30px;
-	margin: 0;
-	margin-bottom: 5px;
-}
-
-.portfolio-item > h3 {
-	margin: 0;
-	margin-bottom: 5px;
-	font-weight: 600;
-	font-style: italic;
-	font-size: 1.25rem;
-}
-
-.portfolio-link {
-	color: white;
-}
-
-.portfolio-item > p {
-	margin-top: 5px;
-}
-
-.portfolio-link:hover {
-	text-decoration: underline;
-	color: white;
-}
-
-/* Hide the scrollbar on the portfolio box */
-.portfolio-container {
-	-ms-scrollbar-base-color: transparent !important;
-	-ms-scrollbar-face-color: transparent !important;
-	-ms-scrollbar-highlight-color: transparent !important;
-	-ms-scrollbar-3dlight-color: transparent !important;
-	-ms-scrollbar-shadow-color: transparent !important;
-	-ms-scrollbar-darkshadow-color: transparent !important;
-	-ms-scrollbar-base-color: transparent !important;
-	-ms-scrollbar-track-color: transparent !important;
-}
-.portfolio-container::-webkit-scrollbar {
-	display: none;
+.content-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 5px;
 }

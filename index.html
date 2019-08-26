@@ -1,85 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Will Eccles</title>
-		<!-- should work for most modern devices. If not, I'll fix it. -->
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-		 crossorigin="anonymous">
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" media="screen and (max-width: 645px)" href="mobile.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-		 crossorigin="anonymous">
-	</head>
-	<body>
-		
-		<div class="center-container backdrop-blur">
-			<div class="avatar"></div>
-			<h1 class="name">Will Eccles</h1>
-			<h3 class="tagline">Software Engineer</h3>
-			<div class="link-container">
-				<a class="link-button github" href="https://www.github.com/willeccles"
-					data-toggle="tooltip" data-placement="bottom" title="GitHub">
-					<div class="button-background"></div>
-					<i class="fab fa-github-alt"></i>
-				</a>
-				<a class="link-button linkedin" href="https://www.linkedin.com/in/will-eccles/"
-					data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
-					<div class="button-background"></div>
-					<i class="fab fa-linkedin-in"></i>
-				</a>
-				<a class="link-button twitter" href="https://www.twitter.com/will_eccles"
-					data-toggle="tooltip" data-placement="bottom" title="Twitter">
-					<div class="button-background"></div>
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a class="link-button instagram" href="https://www.instagram.com/willeccles"
-					data-toggle="tooltip" data-placement="bottom" title="Instagram">
-					<div class="button-background"></div>
-					<i class="fab fa-instagram"></i>
-				</a>
-				<a class="link-button reddit" href="https://www.reddit.com/u/will_eccles"
-					data-toggle="tooltip" data-placement="bottom" title="Reddit">
-					<div class="button-background"></div>
-					<i class="fab fa-reddit-alien"></i>
-				</a>
-				<a class="link-button mail" href="mailto:will@eccles.dev"
-					data-toggle="tooltip" data-placement="bottom" title="Email">
-					<div class="button-background"></div>
-					<i class="far fa-envelope"></i>
-				</a>
-				<a class="link-button portfolio" href="portfolio.html"
-					data-toggle="tooltip" data-placement="bottom" title="Portfolio">
-					<div class="button-background"></div>
-					<i class="far fa-folder"></i>
-				</a>
-			</div>
-		</div>
-
-		<footer><i class="far fa-copyright"></i> Will Eccles 2018<br />Hand-crafted with <i class="fas fa-heart"></i></footer>
-		
-		<!--google analytics script-->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-63609219-1', 'auto');
-			ga('require', 'linkid');
-			ga('send', 'pageview');
-		</script>
-
-		<!-- This is overkill but I don't feel like manually implementing popper.js. -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		 crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		 crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		 crossorigin="anonymous"></script>
-
-		 <script type="text/JavaScript">
-		 $(function () { $('[data-toggle="tooltip"]').tooltip(); });
-		 </script>
-	</body>
+    <head>
+        <title>Will Eccles</title>
+        <link rel='stylesheet' href="style.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 645px)"
+                               href="mobile.css" />
+        <link rel="stylesheet" 
+              href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+              integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+		      crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="info-container temp-border">
+                <h1>Will Eccles</h1>
+                <fieldset>
+                    <legend>About Me</legend>
+                    Embedded software, algorithms, and communications.
+                </fieldset>
+                <fieldset>
+                    <legend>Social</legend>
+                    <ul class="social-list">
+                        <li class="twitter-link">
+                            <a href="https://twitter.com/will_eccles">
+                                <i class="fab fa-twitter-square"></i>
+                                Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="content-container temp-border">
+            </div>
+        </div>
+    </body>
 </html>
