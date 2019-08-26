@@ -78,6 +78,10 @@ a:hover {
     margin: 0;
 }
 
+.social-list > li {
+    font-size: 13px;
+}
+
 .twitter-link > a:hover {
     color: rgb(29, 161, 242);
 }
