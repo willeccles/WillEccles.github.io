@@ -94,11 +94,6 @@ ul {
     margin: 0;
 }
 
-.link-list > li {
-    font-size: 15px;
-    line-height: 20px;
-}
-
 /* Portfolio content */
 
 .portfolio-container {
@@ -107,7 +102,6 @@ ul {
 }
 
 .portfolio {
-    border-left: 1px solid #808074;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
