@@ -1,0 +1,15 @@
+.main-container {
+    flex-direction: column;
+}
+
+.portfolio-container {
+    width: 100%;
+}
+
+.portfolio-item {
+    max-width: 100%;
+}
+
+.info-container {
+    width: 100%;
+}
