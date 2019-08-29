@@ -98,7 +98,7 @@ ul {
 
 .portfolio-container {
     box-sizing: border-box;
-    padding-top: 5px;
+    padding-top: 0;
 }
 
 .portfolio {
@@ -117,3 +117,10 @@ ul {
     max-width: 500px;
 }
 
+.portfolio-item:first-of-type {
+    margin-top: 0;
+}
+
+.portfolio-item > div:first-of-type {
+    margin-bottom: 10px;
+}
