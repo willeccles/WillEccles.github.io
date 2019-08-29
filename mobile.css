@@ -1,30 +1,16 @@
-.center-container {
-	width: 100%;
-	border-radius: 0;
+.main-container {
+    flex-direction: column;
 }
 
 .portfolio-container {
-	width: 100%;
-	padding-top: 84px;
+    width: 100%;
+    margin-top: 20px;
 }
 
-body {
-	margin-left: 0 !important;
+.portfolio-item {
+    max-width: 100%;
 }
 
-.desktop-only { display: none !important; }
-.mobile-only { display: none !important; }
-
-.link-container.standalone {
-	flex-direction: row;
-	justify-content: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: auto;
-}
-
-.tooltip {
-	display: none !important;
+.info-container {
+    width: 100%;
 }
