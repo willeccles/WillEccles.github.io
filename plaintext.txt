@@ -19,7 +19,7 @@ LINKS
  GitHub:  https://www.github.com/willeccles
  LinkeIn: https://www.linkedin.com/in/will-eccles
  Twitter: https://www.twitter.com/will_eccles
- Email:   will@eccles.dev
+ Email:   will at eccles dot dev
  
 PORTFOLIO
  
