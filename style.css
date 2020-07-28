@@ -112,7 +112,7 @@ ul {
 
 .portfolio-item {
     font-size: 15px;
-    margin: 5px;
+    margin: 0px 5px;
     flex-grow: 1;
     max-width: 500px;
 }
