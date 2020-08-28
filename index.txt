@@ -2,9 +2,9 @@ ABOUT
 
  Will Eccles is an embedded software engineer from Connecticut, USA, who studies
  at Quinnipiac University and is currently employed by Bloomy Controls, Inc.
- 
+
 SKILLS
- 
+
   - Embedded software
   - Real-time systems
   - SPI, I2C, UART
@@ -13,37 +13,37 @@ SKILLS
   - Concurrent systems
   - Terminal emulators
   - Focus in C/C++
- 
+
 LINKS
- 
+
  GitHub:  https://www.github.com/willeccles
  LinkeIn: https://www.linkedin.com/in/will-eccles
  Twitter: https://www.twitter.com/will_eccles
  Email:   will at eccles dot dev
- 
+
 PORTFOLIO
- 
+
  libamio:
    An easy-to-use, deterministic library for AM335x-base SOC
    communications.
  Language: C
  Repo: https://www.github.com/willeccles/libamio
  Docs: https://www.eccles.dev/libamio
- 
+
  Arbitrary Data Converter:
    A proprietary library which converts double-precision
    values into an arbitrary number of bits in an integer with arbitrary precision
    and encodings, built to be incredibly fast.
  Language: C++
  Owner: Bloomy Controls, Inc.
- 
+
+ cfm:
+   A lightweight, fast, no-dependency TUI file manager.
+ Language: C
+ Repo: https://github.com/willeccles/cfm
+
  r56-digital-dash:
    A custom Arduino-based digital dashboard for my car.
  Language: C++ (Arduino-flavored)
  Repo: https://www.github.com/willeccles/r56-digital-dash
- 
- calcpi-cpp:
-   A fast, multi-threaded Pi calculator based on a heavily-optimized version of
-   the Nilakantha Series.
- Language: C++
- Repo: https://www.github.com/willeccles/calcpi-cpp
+
