@@ -7,11 +7,11 @@ SKILLS
 
   - Embedded software
   - Real-time systems
-  - SPI, I2C, UART
+  - Embedded communications
   - Industrial communications
-  - All major operating systems; particularly unix-like
+  - All major operating systems
   - Concurrent systems
-  - Terminal emulators
+  - Command lines
   - Focus in C/C++
 
 LINKS
