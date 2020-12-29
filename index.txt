@@ -1,7 +1,8 @@
 ABOUT
 
- Will Eccles is an embedded software engineer from Connecticut, USA, who studies
- at Quinnipiac University and is currently employed by Bloomy Controls, Inc.
+ Will Eccles is an embedded software engineer from Connecticut, USA, who
+ graduated from Quinnipiac University and is currently employed by Bloomy
+ Controls.
 
 SKILLS
 
