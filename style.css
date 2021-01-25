@@ -2,125 +2,125 @@
 
 /* Use this temporarily to see where items are */
 .temp-border {
-    border: 2px solid darkred;
+  border: 2px solid darkred;
 }
 
 html {
-    background-color: #262626;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  background-color: #262626;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
-    background-color: #262626;
-    color: #808074;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
+  background-color: #262626;
+  color: #808074;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
 }
 
 legend {
-    color: #808074;
-    font-size: 17px;
-    font-weight: bold;
+  color: #808074;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 fieldset {
-    border: 1px solid #808074C0;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin: 0;
-    padding: 10px;
-    padding-top: 3px;
+  border: 1px solid #808074C0;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin: 0;
+  padding: 10px;
+  padding-top: 3px;
 }
 
 h1 {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .tagline {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    color: #808074;
-    text-decoration: none;
-    border-bottom: 1px dashed #808074A0;
+  color: #808074;
+  text-decoration: none;
+  border-bottom: 1px dashed #808074A0;
 }
 
 a:visited {
-    color: #808074;
+  color: #808074;
 }
 
 a:hover {
-    opacity: .80;
+  opacity: .80;
 }
 
 i {
-    width: 19px;
-    text-align: center;
+  width: 19px;
+  text-align: center;
 }
 
 /* General */
 
 .main-container {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 
 /* Info box */
 
 .info-container {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0; /* don't let this column grow */
-    flex-shrink: 0;
-    justify-content: center;
-    padding: 5px;
-    padding-top: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0; /* don't let this column grow */
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Portfolio content */
 
 .portfolio-container {
-    box-sizing: border-box;
-    padding-top: 0;
+  box-sizing: border-box;
+  padding-top: 0;
 }
 
 .portfolio {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .portfolio-item {
-    font-size: 15px;
-    margin: 0px 5px;
-    flex-grow: 1;
-    max-width: 500px;
+  font-size: 15px;
+  margin: 0px 5px;
+  flex-grow: 1;
+  max-width: 500px;
 }
 
 .portfolio-item:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .portfolio-item > div:first-of-type {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
