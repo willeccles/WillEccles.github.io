@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/willeccles
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://eccles.dev
+  * I am willeccles (https://keybase.io/willeccles) on keybase.
+  * I have a public key with fingerprint 956D 8570 AA24 7CEC 5515  8652 CAEB C3A8 A8B8 E9E8
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01012978e5f76b2534a61989145c32d51f70dea1c24ba3418aeb07c8df7fc9b24d430a",
+      "fingerprint": "956d8570aa247cec55158652caebc3a8a8b8e9e8",
+      "host": "keybase.io",
+      "key_id": "caebc3a8a8b8e9e8",
+      "kid": "01012978e5f76b2534a61989145c32d51f70dea1c24ba3418aeb07c8df7fc9b24d430a",
+      "uid": "85479f570ab4ec983f87d0507b89e219",
+      "username": "willeccles"
+    },
+    "service": {
+      "hostname": "eccles.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1630697596,
+  "expire_in": 157680000,
+  "prev": "557c671ee2662d111c012754b1351b698a787a4cdc64e5b83151e67d0475d076",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMM/AnicrVJtUFRVGN7VBQvDAMMpE7DrkDgR3a9zz7mLEkgqy+SGhlKZwP04y15Z
+dmH3smJ8hDloymA5DRYjjqYyoUMaOc7gxLfrZDA6QhEKNBI1SCDExEczVtC9ZP/6
+2flz5jzneZ73ed95fYGLDQHGjrFrtbUNv4wYO9s+zjcIdEFRISG65H2EuZDIxgsX
+dsjYo2ZkKzJhJkiKpGgeIgxskBNpwLACR/GIp1ggMbQMKBskZSxQEs2KAsNSSMAi
+CSUk26BN4kWalVmGFIhowqY4s7A71604Vc2WB5yMACQFgWahhCUAKIA4QEuaXGIE
+JCARYR4jTWh3eXSFFk4UPDhGcWmY9shYiPcf/P85d/6CHQIs5G16YJHFEo8YG4Iy
+CUgoIh7TFK8TPdjtFHKwxt6rOBxYkhzYQxRHExruVSSsj1bv5RHnn/8YGXs1ba7b
+pbokl0PD7aqa6zHrOnVf7oIZFjMeWWSIilPW5qgpvNjtUVxOwkxpTElVdE+KY0iO
+h4DnoglckKu4cYaiMwDkEKkdvY5WzkwAACUOUhjTHEfLFEVJ2rAgYEWKAZTI8UiA
+CAqsJEsci4GIGApQmNMaZiGQScgRelN5ThdhZrSYQpZm6VGynIKa78ZEcXvb2yaD
+McDg77dI3y9DwONB/27dZ+uenE+++cOm48bZa1cyW6fLXpb3mszF3ydW+Z5JSGt+
+MHyPTzctragLiR9pSrgR9ALoElbsWPLbAGnvPbL886vTZPtoZdnln7t7DeFfVVWf
+7OueYY7/af50NrY/6Y9vK0/h4fXZ76TdXpn30dfqW2ssE0dfMlbtKTKlNFq6E9eE
+l1gti0oTI6azJuxHfrecDRpAr6eFHgj3Oay+Urd9qIaueVhEbb3zQcP8u1NfkHcj
+dndZjSXxpy8u7gwsUL0blvkOP789KeHo1hR3yKy3zfrh6YujmSPr/MWy++7kglvL
+DKGDP61/73p9VAy/f2Ncc489L+9My2TP5lhXr6umpyql9dLu98cuVNW1tBpvB7w4
+lL3zuvXEVFtM9dwp6+Vjv+YnzhBnm8MOQ6tpVnHyTYHlLYa7EVteVZb7BxWxmZZV
+6g06J3LyYOyq4PntfL/Zr+67xkFyvDD0YMV9zycPdvUWR8N7leUTHVFh6X77PaNN
+Jy22sIYVcT62NiX93Jyt7kJbyo+Xhtor9nzzMHUqbyZxcPOhqJyWZ4mYN7f1fBnZ
+E7xkU/LV8JDmm332kPnYv9Da+dK1aByn7nisP6rkVuzq4YRq/5WNfedPvMaJG7iS
+c/EVd55rr99pnNy1zfuUL27s2Pgrwd1Lz1cUdyw7VL9xy2z5cGT6ga4zbF/6QId6
+5Y3OJAuqSZ0zPRHx9N+hgr9l
+=4L45
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/willeccles
+
+==================================================================
+
