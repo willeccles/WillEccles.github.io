@@ -6,7 +6,7 @@ ABOUT
 
 SKILLS
 
-  - Strong C/C++
+  - Expert C/C++
   - Embedded Linux
   - Embedded systems
   - Real-time computing
